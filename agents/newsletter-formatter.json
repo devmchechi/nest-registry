@@ -8,17 +8,30 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/newsletter-formatter",
-  "tags": ["content", "newsletter", "email", "marketing"],
+  "tags": [
+    "content",
+    "newsletter",
+    "email",
+    "marketing"
+  ],
   "capabilities": {
-    "tools": ["read_file", "write_file", "list_dir"],
+    "tools": [
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["write_file"]
+    "requires_approval": [
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.12
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/agents/newsletter-formatter/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/agents/newsletter-formatter/README.md",
+  "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+  "signature": "ed25519:X06PeF2X1emPvEOll4PKCS4qMmGmdGK+2Rdj1A+cowI+Kr8rvhTsEmYNtKAotDlvXtm0WIcD8mUd1WfNFv0MBg=="
 }

@@ -8,17 +8,31 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/report-writer",
-  "tags": ["analytics", "reporting", "kpis"],
+  "tags": [
+    "analytics",
+    "reporting",
+    "kpis"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.02,
     "max": 0.18
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/report-writer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/report-writer/README.md",
+  "commit": "41e14ab59969156da58358bd0593028d5c285add",
+  "signature": "ed25519:TOdbaxe9L2ejrLiHdRxYeGFRLXsHZASIsRKyPj1SMmk6NBv/wgeh4oj5T0w8veDQTOX9GtPB6zaj5aZsAfk4Aw=="
 }

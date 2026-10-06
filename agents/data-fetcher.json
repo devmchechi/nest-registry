@@ -8,17 +8,34 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/data-fetcher",
-  "tags": ["analytics", "data", "csv", "etl"],
+  "tags": [
+    "analytics",
+    "data",
+    "csv",
+    "etl"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
-    "network": ["raw.githubusercontent.com"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [
+      "raw.githubusercontent.com"
+    ],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.12
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/data-fetcher/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/data-fetcher/README.md",
+  "commit": "41e14ab59969156da58358bd0593028d5c285add",
+  "signature": "ed25519:9PO89wwri9EQDkj5/BMC882YBIUSlE2rcduhqrfjH5nreQxnA1gdxm1CbXafvziPcVX9dcPSTTdHnGpfbJimDQ=="
 }

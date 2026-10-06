@@ -8,17 +8,35 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/arxiv-researcher",
-  "tags": ["research", "papers", "arxiv", "search"],
+  "tags": [
+    "research",
+    "papers",
+    "arxiv",
+    "search"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
-    "network": ["export.arxiv.org", "api.semanticscholar.org"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [
+      "export.arxiv.org",
+      "api.semanticscholar.org"
+    ],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.15
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/arxiv-researcher/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/arxiv-researcher/README.md",
+  "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+  "signature": "ed25519:oV0eiIm2BQnVtVSzqhkslaaHwH/frdtFhoExAvqZO6o0VMDmbXacqb7rHbkJZvcblsK4EggS8fkwaPLr3TrUCw=="
 }

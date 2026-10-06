@@ -11,17 +11,34 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/data-fetcher",
-      "tags": ["analytics", "data", "csv", "etl"],
+      "tags": [
+        "analytics",
+        "data",
+        "csv",
+        "etl"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
-        "network": ["raw.githubusercontent.com"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [
+          "raw.githubusercontent.com"
+        ],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.12
-      }
+      },
+      "commit": "41e14ab59969156da58358bd0593028d5c285add",
+      "signature": "ed25519:9PO89wwri9EQDkj5/BMC882YBIUSlE2rcduhqrfjH5nreQxnA1gdxm1CbXafvziPcVX9dcPSTTdHnGpfbJimDQ=="
     },
     {
       "id": "chart-generator",
@@ -33,17 +50,31 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/chart-generator",
-      "tags": ["analytics", "charts", "visualization"],
+      "tags": [
+        "analytics",
+        "charts",
+        "visualization"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.12
-      }
+      },
+      "commit": "41e14ab59969156da58358bd0593028d5c285add",
+      "signature": "ed25519:SZlG5+fIJxk9oQY+T3BW0LMhjoDvbtVqweYi27gxZ6z13njf7ftbfv5VhABJ2ck5LEmH0jc6wyc1n9blJOQSAA=="
     },
     {
       "id": "report-writer",
@@ -55,17 +86,31 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/report-writer",
-      "tags": ["analytics", "reporting", "kpis"],
+      "tags": [
+        "analytics",
+        "reporting",
+        "kpis"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.18
-      }
+      },
+      "commit": "41e14ab59969156da58358bd0593028d5c285add",
+      "signature": "ed25519:TOdbaxe9L2ejrLiHdRxYeGFRLXsHZASIsRKyPj1SMmk6NBv/wgeh4oj5T0w8veDQTOX9GtPB6zaj5aZsAfk4Aw=="
     },
     {
       "id": "blog-draft-writer",
@@ -77,17 +122,30 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/blog-draft-writer",
-      "tags": ["content", "writing", "blogging", "marketing"],
+      "tags": [
+        "content",
+        "writing",
+        "blogging",
+        "marketing"
+      ],
       "capabilities": {
-        "tools": ["read_file", "write_file", "list_dir"],
+        "tools": [
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["write_file"]
+        "requires_approval": [
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.2
-      }
+      },
+      "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+      "signature": "ed25519:OpgJNX89jioUNl5I9EEARwjI7b6AzY80DJkrJX244QzMpcR50cvO3FNBk6WMZklz2lquu3/upKHtgiT8QLWMAA=="
     },
     {
       "id": "newsletter-formatter",
@@ -99,17 +157,30 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/newsletter-formatter",
-      "tags": ["content", "newsletter", "email", "marketing"],
+      "tags": [
+        "content",
+        "newsletter",
+        "email",
+        "marketing"
+      ],
       "capabilities": {
-        "tools": ["read_file", "write_file", "list_dir"],
+        "tools": [
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["write_file"]
+        "requires_approval": [
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.12
-      }
+      },
+      "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+      "signature": "ed25519:X06PeF2X1emPvEOll4PKCS4qMmGmdGK+2Rdj1A+cowI+Kr8rvhTsEmYNtKAotDlvXtm0WIcD8mUd1WfNFv0MBg=="
     },
     {
       "id": "seo-analyzer",
@@ -121,17 +192,30 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/seo-analyzer",
-      "tags": ["content", "seo", "marketing", "audit"],
+      "tags": [
+        "content",
+        "seo",
+        "marketing",
+        "audit"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell"]
+        "requires_approval": [
+          "shell"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.1
-      }
+      },
+      "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+      "signature": "ed25519:MSlLVkbfRuHV1RKVjjUBAJvsjxDndliiT1E/CmYANcVZWxSbtZhC1myq5pbDLOjSor4VNTBa/YggfijlOUMEAg=="
     },
     {
       "id": "code-reviewer",
@@ -143,17 +227,30 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/code-reviewer",
-      "tags": ["engineering", "code-review", "security", "git"],
+      "tags": [
+        "engineering",
+        "code-review",
+        "security",
+        "git"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell"]
+        "requires_approval": [
+          "shell"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.4
-      }
+      },
+      "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+      "signature": "ed25519:RnO4MJZtQh9Z1XLY9RbPM9Cc/GOLeM3lGyE1+sQyLrcf4QSVL+qIN5cEDg1UNY7F6VRP52Q5HlS6I24YB8G1Ag=="
     },
     {
       "id": "test-writer",
@@ -165,17 +262,31 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/test-writer",
-      "tags": ["engineering", "testing", "quality"],
+      "tags": [
+        "engineering",
+        "testing",
+        "quality"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.03,
         "max": 0.5
-      }
+      },
+      "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+      "signature": "ed25519:qg92m25d18DXj0uUsusOm1ao0tRWTo0Up2F5hVAMUK8CLoMsWPCo/04KFnxrp+avO6ZBVr+6Z4koiG/AyhowAw=="
     },
     {
       "id": "docs-generator",
@@ -187,17 +298,31 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/docs-generator",
-      "tags": ["engineering", "documentation", "writing"],
+      "tags": [
+        "engineering",
+        "documentation",
+        "writing"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.4
-      }
+      },
+      "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+      "signature": "ed25519:uiiqQbUAUzPlyb5ypGAbzv1cGsZRGBppWIX6qMZ/mbJHJybZl/TSC0lbZS42xiC+FFcxwUUjXhorOxtlk4bfBQ=="
     },
     {
       "id": "pr-summarizer",
@@ -209,17 +334,32 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/pr-summarizer",
-      "tags": ["engineering", "pull-requests", "git", "github"],
+      "tags": [
+        "engineering",
+        "pull-requests",
+        "git",
+        "github"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "list_dir"],
-        "network": ["api.github.com"],
+        "tools": [
+          "shell",
+          "read_file",
+          "list_dir"
+        ],
+        "network": [
+          "api.github.com"
+        ],
         "pilots": [],
-        "requires_approval": ["shell"]
+        "requires_approval": [
+          "shell"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.15
-      }
+      },
+      "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+      "signature": "ed25519:63ePxup2gRg/nm5XpbrduUVH9cMv6ay5uip0uJ0PlJdRpa7kMdtL6tUkKovVJQBxk92OBF0fY7aRsHEnOih4BA=="
     },
     {
       "id": "email-triager",
@@ -231,17 +371,32 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/email-triager",
-      "tags": ["personal", "email", "productivity", "offline"],
+      "tags": [
+        "personal",
+        "email",
+        "productivity",
+        "offline"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.2
-      }
+      },
+      "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+      "signature": "ed25519:Pd0PPiLFunIeygCK0uGnFRZ0usrZW5wak0aThQJl/MyeNEFWPON5WlcQZJDRv46ENEwHsRJCiRr0kM19C58UBA=="
     },
     {
       "id": "calendar-summarizer",
@@ -253,17 +408,32 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/calendar-summarizer",
-      "tags": ["personal", "calendar", "productivity", "offline"],
+      "tags": [
+        "personal",
+        "calendar",
+        "productivity",
+        "offline"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.1
-      }
+      },
+      "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+      "signature": "ed25519:ye8fND29bbHC+Tgm/uxWV32U2AgGvKqXPDbfOlVdhO9nx5pL17u/RE3NQu3cMwURT1oe9zzLWtsmrA2IgnFxDA=="
     },
     {
       "id": "meeting-notes",
@@ -275,17 +445,31 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/meeting-notes",
-      "tags": ["personal", "meetings", "notes", "productivity", "offline"],
+      "tags": [
+        "personal",
+        "meetings",
+        "notes",
+        "productivity",
+        "offline"
+      ],
       "capabilities": {
-        "tools": ["read_file", "write_file", "list_dir"],
+        "tools": [
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["write_file"]
+        "requires_approval": [
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.12
-      }
+      },
+      "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+      "signature": "ed25519:3EzRGRavvI+qKjieAIFK7h99QPX9zfvlDd3igyj54KlczE6OhNzSYT9aaWvhJq3/rBrp+5ZqFur3qLTK0HAmDA=="
     },
     {
       "id": "arxiv-researcher",
@@ -297,17 +481,35 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/arxiv-researcher",
-      "tags": ["research", "papers", "arxiv", "search"],
+      "tags": [
+        "research",
+        "papers",
+        "arxiv",
+        "search"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
-        "network": ["export.arxiv.org", "api.semanticscholar.org"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [
+          "export.arxiv.org",
+          "api.semanticscholar.org"
+        ],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.15
-      }
+      },
+      "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+      "signature": "ed25519:oV0eiIm2BQnVtVSzqhkslaaHwH/frdtFhoExAvqZO6o0VMDmbXacqb7rHbkJZvcblsK4EggS8fkwaPLr3TrUCw=="
     },
     {
       "id": "paper-summarizer",
@@ -319,17 +521,32 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/paper-summarizer",
-      "tags": ["research", "papers", "summaries", "pdf"],
+      "tags": [
+        "research",
+        "papers",
+        "summaries",
+        "pdf"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.3
-      }
+      },
+      "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+      "signature": "ed25519:DOg1SH7ciYyQb14YP2datUewRq+/1HbBlfOKnXr+asR3mdgi5H+dZmMPA+QAb9MpSO9nHcd8epmn40LKFVh2BA=="
     },
     {
       "id": "citation-formatter",
@@ -341,17 +558,35 @@
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
       "path": "agents/citation-formatter",
-      "tags": ["research", "citations", "bibtex", "writing"],
+      "tags": [
+        "research",
+        "citations",
+        "bibtex",
+        "writing"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
-        "network": ["api.crossref.org", "export.arxiv.org"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [
+          "api.crossref.org",
+          "export.arxiv.org"
+        ],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.08
-      }
+      },
+      "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+      "signature": "ed25519:gNA6qDUB9r4j1cF4BTmY5Zts2cgOBYBmph56Jm8D4eFEqmNWZR1cHXSHQWE8Vbdl0opE/McHljEHxuTvSsV/Aw=="
     }
   ],
   "packs": [
@@ -364,7 +599,12 @@
       "latest_version": "1.0.0",
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
-      "tags": ["analytics", "data", "charts", "reporting"],
+      "tags": [
+        "analytics",
+        "data",
+        "charts",
+        "reporting"
+      ],
       "agents": [
         {
           "id": "data-fetcher",
@@ -382,12 +622,24 @@
           "description": "Writes concise metrics reports from your data and charts, with KPIs against targets, notable changes, verified numbers and clear next questions, in Markdown for your team."
         }
       ],
-      "workflows": ["daily-metrics"],
+      "workflows": [
+        "daily-metrics"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
-        "network": ["raw.githubusercontent.com"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [
+          "raw.githubusercontent.com"
+        ],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "install_size_kb": 30,
       "estimated_cost_usd": {
@@ -395,7 +647,9 @@
         "max": 0.45
       },
       "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
-      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/README.md"
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/README.md",
+      "commit": "41e14ab59969156da58358bd0593028d5c285add",
+      "signature": "ed25519:epceicEDk1p45GytECs+0PA4Sb16K5yZtA3nONwOqu6oMkWXtxScGMZdnyldJmcmQgLqaGdvDSr+wxCVdKabCw=="
     },
     {
       "id": "content-pack",
@@ -406,7 +660,12 @@
       "latest_version": "1.0.0",
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
-      "tags": ["content", "writing", "seo", "newsletter"],
+      "tags": [
+        "content",
+        "writing",
+        "seo",
+        "newsletter"
+      ],
       "agents": [
         {
           "id": "blog-draft-writer",
@@ -424,12 +683,22 @@
           "description": "Audits a draft or HTML page for on-page SEO and readability (keyword use, titles, headings, meta, links, structure) and returns a prioritized fix list with rewrites."
         }
       ],
-      "workflows": ["weekly-content"],
+      "workflows": [
+        "weekly-content"
+      ],
       "capabilities": {
-        "tools": ["read_file", "write_file", "list_dir", "shell"],
+        "tools": [
+          "read_file",
+          "write_file",
+          "list_dir",
+          "shell"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["write_file", "shell"]
+        "requires_approval": [
+          "write_file",
+          "shell"
+        ]
       },
       "install_size_kb": 30,
       "estimated_cost_usd": {
@@ -437,7 +706,9 @@
         "max": 0.5
       },
       "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
-      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/README.md"
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/README.md",
+      "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+      "signature": "ed25519:4vyCW1Yj//2YSl+Mi26j5RT7unTGKlMUphVoaIX/pFc1A0FA8HIn7e/AWzW2g69sxdCyYmwtI+bFC1n72CDCBA=="
     },
     {
       "id": "engineering-pack",
@@ -448,7 +719,12 @@
       "latest_version": "1.0.0",
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
-      "tags": ["engineering", "code-review", "testing", "documentation"],
+      "tags": [
+        "engineering",
+        "code-review",
+        "testing",
+        "documentation"
+      ],
       "agents": [
         {
           "id": "code-reviewer",
@@ -471,12 +747,24 @@
           "description": "Summarizes a pull request or branch diff into a clear description covering what changed, why, risk, testing and reviewer focus. Works on local repos and public GitHub PRs."
         }
       ],
-      "workflows": ["pr-review"],
+      "workflows": [
+        "pr-review"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "list_dir", "write_file"],
-        "network": ["api.github.com"],
+        "tools": [
+          "shell",
+          "read_file",
+          "list_dir",
+          "write_file"
+        ],
+        "network": [
+          "api.github.com"
+        ],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "install_size_kb": 38,
       "estimated_cost_usd": {
@@ -484,7 +772,9 @@
         "max": 0.9
       },
       "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
-      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/README.md"
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/README.md",
+      "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+      "signature": "ed25519:Dv6KbuhyTBj2HfmON/QtvdFhwjx5nMTaXBOf8lRJqvuqb/iJ4t5vi772rP6kJ1Y26sjcXcGOQu1TpUc55+lmAA=="
     },
     {
       "id": "personal-pack",
@@ -495,7 +785,13 @@
       "latest_version": "1.0.0",
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
-      "tags": ["personal", "productivity", "email", "calendar", "offline"],
+      "tags": [
+        "personal",
+        "productivity",
+        "email",
+        "calendar",
+        "offline"
+      ],
       "agents": [
         {
           "id": "email-triager",
@@ -513,12 +809,22 @@
           "description": "Turns meeting transcripts or rough notes from your working folder into clean minutes with decisions, owners, due dates and a follow-up email draft."
         }
       ],
-      "workflows": ["daily-briefing"],
+      "workflows": [
+        "daily-briefing"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "install_size_kb": 31,
       "estimated_cost_usd": {
@@ -526,7 +832,9 @@
         "max": 0.4
       },
       "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
-      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/README.md"
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/README.md",
+      "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+      "signature": "ed25519:kikalq8v53C1TW3VfQaUbyXensIzh4mY/Z05M2ahGTy77kDbGTmuf0V7Am89ZrwXxWe03CSKW8v1j/1JCwHRDw=="
     },
     {
       "id": "research-pack",
@@ -537,7 +845,12 @@
       "latest_version": "1.0.0",
       "ref": "v1.0.0",
       "min_nest_version": "0.1.0",
-      "tags": ["research", "papers", "citations", "academic"],
+      "tags": [
+        "research",
+        "papers",
+        "citations",
+        "academic"
+      ],
       "agents": [
         {
           "id": "arxiv-researcher",
@@ -555,16 +868,26 @@
           "description": "Turns DOIs, arXiv IDs, titles or messy reference lists into verified BibTeX, APA 7 and MLA 9 citations, using Crossref and arXiv metadata."
         }
       ],
-      "workflows": ["literature-review"],
+      "workflows": [
+        "literature-review"
+      ],
       "capabilities": {
-        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
         "network": [
           "export.arxiv.org",
           "api.semanticscholar.org",
           "api.crossref.org"
         ],
         "pilots": [],
-        "requires_approval": ["shell", "write_file"]
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
       },
       "install_size_kb": 32,
       "estimated_cost_usd": {
@@ -572,7 +895,9 @@
         "max": 0.6
       },
       "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
-      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/README.md"
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/README.md",
+      "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+      "signature": "ed25519:yYuWRABc648dhf3AhEqLEjJgweSSrf2iygAX8tuG8Mf97TEoC53RifTTMyRzH/YGcmQIrtAirije/VS64JpnDQ=="
     }
   ]
 }

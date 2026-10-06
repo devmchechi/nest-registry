@@ -8,17 +8,32 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/paper-summarizer",
-  "tags": ["research", "papers", "summaries", "pdf"],
+  "tags": [
+    "research",
+    "papers",
+    "summaries",
+    "pdf"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.02,
     "max": 0.3
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/paper-summarizer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/paper-summarizer/README.md",
+  "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+  "signature": "ed25519:DOg1SH7ciYyQb14YP2datUewRq+/1HbBlfOKnXr+asR3mdgi5H+dZmMPA+QAb9MpSO9nHcd8epmn40LKFVh2BA=="
 }

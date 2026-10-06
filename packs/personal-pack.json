@@ -7,7 +7,13 @@
   "latest_version": "1.0.0",
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
-  "tags": ["personal", "productivity", "email", "calendar", "offline"],
+  "tags": [
+    "personal",
+    "productivity",
+    "email",
+    "calendar",
+    "offline"
+  ],
   "agents": [
     {
       "id": "email-triager",
@@ -25,12 +31,22 @@
       "description": "Turns meeting transcripts or rough notes from your working folder into clean minutes with decisions, owners, due dates and a follow-up email draft."
     }
   ],
-  "workflows": ["daily-briefing"],
+  "workflows": [
+    "daily-briefing"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "install_size_kb": 31,
   "estimated_cost_usd": {
@@ -38,5 +54,7 @@
     "max": 0.4
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/README.md",
+  "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+  "signature": "ed25519:kikalq8v53C1TW3VfQaUbyXensIzh4mY/Z05M2ahGTy77kDbGTmuf0V7Am89ZrwXxWe03CSKW8v1j/1JCwHRDw=="
 }

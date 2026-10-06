@@ -7,7 +7,12 @@
   "latest_version": "1.0.0",
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
-  "tags": ["analytics", "data", "charts", "reporting"],
+  "tags": [
+    "analytics",
+    "data",
+    "charts",
+    "reporting"
+  ],
   "agents": [
     {
       "id": "data-fetcher",
@@ -25,12 +30,24 @@
       "description": "Writes concise metrics reports from your data and charts, with KPIs against targets, notable changes, verified numbers and clear next questions, in Markdown for your team."
     }
   ],
-  "workflows": ["daily-metrics"],
+  "workflows": [
+    "daily-metrics"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
-    "network": ["raw.githubusercontent.com"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [
+      "raw.githubusercontent.com"
+    ],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "install_size_kb": 30,
   "estimated_cost_usd": {
@@ -38,5 +55,7 @@
     "max": 0.45
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/README.md",
+  "commit": "41e14ab59969156da58358bd0593028d5c285add",
+  "signature": "ed25519:epceicEDk1p45GytECs+0PA4Sb16K5yZtA3nONwOqu6oMkWXtxScGMZdnyldJmcmQgLqaGdvDSr+wxCVdKabCw=="
 }

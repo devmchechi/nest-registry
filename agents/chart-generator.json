@@ -8,17 +8,31 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/chart-generator",
-  "tags": ["analytics", "charts", "visualization"],
+  "tags": [
+    "analytics",
+    "charts",
+    "visualization"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.12
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/chart-generator/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/chart-generator/README.md",
+  "commit": "41e14ab59969156da58358bd0593028d5c285add",
+  "signature": "ed25519:SZlG5+fIJxk9oQY+T3BW0LMhjoDvbtVqweYi27gxZ6z13njf7ftbfv5VhABJ2ck5LEmH0jc6wyc1n9blJOQSAA=="
 }

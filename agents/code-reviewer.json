@@ -8,17 +8,30 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/code-reviewer",
-  "tags": ["engineering", "code-review", "security", "git"],
+  "tags": [
+    "engineering",
+    "code-review",
+    "security",
+    "git"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell"]
+    "requires_approval": [
+      "shell"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.02,
     "max": 0.4
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/code-reviewer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/code-reviewer/README.md",
+  "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+  "signature": "ed25519:RnO4MJZtQh9Z1XLY9RbPM9Cc/GOLeM3lGyE1+sQyLrcf4QSVL+qIN5cEDg1UNY7F6VRP52Q5HlS6I24YB8G1Ag=="
 }

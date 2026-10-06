@@ -8,17 +8,32 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/calendar-summarizer",
-  "tags": ["personal", "calendar", "productivity", "offline"],
+  "tags": [
+    "personal",
+    "calendar",
+    "productivity",
+    "offline"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.1
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/agents/calendar-summarizer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/agents/calendar-summarizer/README.md",
+  "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+  "signature": "ed25519:ye8fND29bbHC+Tgm/uxWV32U2AgGvKqXPDbfOlVdhO9nx5pL17u/RE3NQu3cMwURT1oe9zzLWtsmrA2IgnFxDA=="
 }

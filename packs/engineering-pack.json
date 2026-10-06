@@ -7,7 +7,12 @@
   "latest_version": "1.0.0",
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
-  "tags": ["engineering", "code-review", "testing", "documentation"],
+  "tags": [
+    "engineering",
+    "code-review",
+    "testing",
+    "documentation"
+  ],
   "agents": [
     {
       "id": "code-reviewer",
@@ -30,12 +35,24 @@
       "description": "Summarizes a pull request or branch diff into a clear description covering what changed, why, risk, testing and reviewer focus. Works on local repos and public GitHub PRs."
     }
   ],
-  "workflows": ["pr-review"],
+  "workflows": [
+    "pr-review"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "list_dir", "write_file"],
-    "network": ["api.github.com"],
+    "tools": [
+      "shell",
+      "read_file",
+      "list_dir",
+      "write_file"
+    ],
+    "network": [
+      "api.github.com"
+    ],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "install_size_kb": 38,
   "estimated_cost_usd": {
@@ -43,5 +60,7 @@
     "max": 0.9
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/README.md",
+  "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+  "signature": "ed25519:Dv6KbuhyTBj2HfmON/QtvdFhwjx5nMTaXBOf8lRJqvuqb/iJ4t5vi772rP6kJ1Y26sjcXcGOQu1TpUc55+lmAA=="
 }

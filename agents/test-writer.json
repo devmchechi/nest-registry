@@ -8,17 +8,31 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/test-writer",
-  "tags": ["engineering", "testing", "quality"],
+  "tags": [
+    "engineering",
+    "testing",
+    "quality"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.03,
     "max": 0.5
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/test-writer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/test-writer/README.md",
+  "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+  "signature": "ed25519:qg92m25d18DXj0uUsusOm1ao0tRWTo0Up2F5hVAMUK8CLoMsWPCo/04KFnxrp+avO6ZBVr+6Z4koiG/AyhowAw=="
 }

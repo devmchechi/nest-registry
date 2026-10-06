@@ -7,7 +7,12 @@
   "latest_version": "1.0.0",
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
-  "tags": ["content", "writing", "seo", "newsletter"],
+  "tags": [
+    "content",
+    "writing",
+    "seo",
+    "newsletter"
+  ],
   "agents": [
     {
       "id": "blog-draft-writer",
@@ -25,12 +30,22 @@
       "description": "Audits a draft or HTML page for on-page SEO and readability (keyword use, titles, headings, meta, links, structure) and returns a prioritized fix list with rewrites."
     }
   ],
-  "workflows": ["weekly-content"],
+  "workflows": [
+    "weekly-content"
+  ],
   "capabilities": {
-    "tools": ["read_file", "write_file", "list_dir", "shell"],
+    "tools": [
+      "read_file",
+      "write_file",
+      "list_dir",
+      "shell"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["write_file", "shell"]
+    "requires_approval": [
+      "write_file",
+      "shell"
+    ]
   },
   "install_size_kb": 30,
   "estimated_cost_usd": {
@@ -38,5 +53,7 @@
     "max": 0.5
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/README.md",
+  "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+  "signature": "ed25519:4vyCW1Yj//2YSl+Mi26j5RT7unTGKlMUphVoaIX/pFc1A0FA8HIn7e/AWzW2g69sxdCyYmwtI+bFC1n72CDCBA=="
 }

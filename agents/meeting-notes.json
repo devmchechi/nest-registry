@@ -8,17 +8,31 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/meeting-notes",
-  "tags": ["personal", "meetings", "notes", "productivity", "offline"],
+  "tags": [
+    "personal",
+    "meetings",
+    "notes",
+    "productivity",
+    "offline"
+  ],
   "capabilities": {
-    "tools": ["read_file", "write_file", "list_dir"],
+    "tools": [
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["write_file"]
+    "requires_approval": [
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.12
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/agents/meeting-notes/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/agents/meeting-notes/README.md",
+  "commit": "ef2862b28cd41642c0afc96475ddd0ebfbf4b969",
+  "signature": "ed25519:3EzRGRavvI+qKjieAIFK7h99QPX9zfvlDd3igyj54KlczE6OhNzSYT9aaWvhJq3/rBrp+5ZqFur3qLTK0HAmDA=="
 }

@@ -7,7 +7,12 @@
   "latest_version": "1.0.0",
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
-  "tags": ["research", "papers", "citations", "academic"],
+  "tags": [
+    "research",
+    "papers",
+    "citations",
+    "academic"
+  ],
   "agents": [
     {
       "id": "arxiv-researcher",
@@ -25,16 +30,26 @@
       "description": "Turns DOIs, arXiv IDs, titles or messy reference lists into verified BibTeX, APA 7 and MLA 9 citations, using Crossref and arXiv metadata."
     }
   ],
-  "workflows": ["literature-review"],
+  "workflows": [
+    "literature-review"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [
       "export.arxiv.org",
       "api.semanticscholar.org",
       "api.crossref.org"
     ],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "install_size_kb": 32,
   "estimated_cost_usd": {
@@ -42,5 +57,7 @@
     "max": 0.6
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/README.md",
+  "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+  "signature": "ed25519:yYuWRABc648dhf3AhEqLEjJgweSSrf2iygAX8tuG8Mf97TEoC53RifTTMyRzH/YGcmQIrtAirije/VS64JpnDQ=="
 }

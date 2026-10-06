@@ -8,17 +8,35 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/citation-formatter",
-  "tags": ["research", "citations", "bibtex", "writing"],
+  "tags": [
+    "research",
+    "citations",
+    "bibtex",
+    "writing"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "write_file", "list_dir"],
-    "network": ["api.crossref.org", "export.arxiv.org"],
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [
+      "api.crossref.org",
+      "export.arxiv.org"
+    ],
     "pilots": [],
-    "requires_approval": ["shell", "write_file"]
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.08
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/citation-formatter/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/citation-formatter/README.md",
+  "commit": "5f01e620057a924c70a92cf21e01670598121b2d",
+  "signature": "ed25519:gNA6qDUB9r4j1cF4BTmY5Zts2cgOBYBmph56Jm8D4eFEqmNWZR1cHXSHQWE8Vbdl0opE/McHljEHxuTvSsV/Aw=="
 }

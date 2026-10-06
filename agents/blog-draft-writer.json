@@ -8,17 +8,30 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/blog-draft-writer",
-  "tags": ["content", "writing", "blogging", "marketing"],
+  "tags": [
+    "content",
+    "writing",
+    "blogging",
+    "marketing"
+  ],
   "capabilities": {
-    "tools": ["read_file", "write_file", "list_dir"],
+    "tools": [
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
     "network": [],
     "pilots": [],
-    "requires_approval": ["write_file"]
+    "requires_approval": [
+      "write_file"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.02,
     "max": 0.2
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/agents/blog-draft-writer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/agents/blog-draft-writer/README.md",
+  "commit": "25ab9fa8c29ad62d3d3ca6141aba19cdfe6cadf7",
+  "signature": "ed25519:OpgJNX89jioUNl5I9EEARwjI7b6AzY80DJkrJX244QzMpcR50cvO3FNBk6WMZklz2lquu3/upKHtgiT8QLWMAA=="
 }

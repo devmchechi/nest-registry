@@ -8,17 +8,32 @@
   "ref": "v1.0.0",
   "min_nest_version": "0.1.0",
   "path": "agents/pr-summarizer",
-  "tags": ["engineering", "pull-requests", "git", "github"],
+  "tags": [
+    "engineering",
+    "pull-requests",
+    "git",
+    "github"
+  ],
   "capabilities": {
-    "tools": ["shell", "read_file", "list_dir"],
-    "network": ["api.github.com"],
+    "tools": [
+      "shell",
+      "read_file",
+      "list_dir"
+    ],
+    "network": [
+      "api.github.com"
+    ],
     "pilots": [],
-    "requires_approval": ["shell"]
+    "requires_approval": [
+      "shell"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
     "max": 0.15
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/pr-summarizer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/pr-summarizer/README.md",
+  "commit": "fc4b455e24f828b9f4e1a256a6608cc319ec69e9",
+  "signature": "ed25519:63ePxup2gRg/nm5XpbrduUVH9cMv6ay5uip0uJ0PlJdRpa7kMdtL6tUkKovVJQBxk92OBF0fY7aRsHEnOih4BA=="
 }
