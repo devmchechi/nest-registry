@@ -1,0 +1,42 @@
+{
+  "id": "personal-pack",
+  "name": "Personal Pack",
+  "description": "Offline email triage, calendar summaries and meeting minutes from files you export, combined into a daily briefing.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-personal-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": ["personal", "productivity", "email", "calendar", "offline"],
+  "agents": [
+    {
+      "id": "email-triager",
+      "name": "Email Triager",
+      "description": "Sorts exported emails (.eml, .mbox, text) from your working folder into what needs action, replies or reading, and drafts short replies. Fully offline."
+    },
+    {
+      "id": "calendar-summarizer",
+      "name": "Calendar Summarizer",
+      "description": "Reads exported calendars (.ics or CSV) from your working folder and summarizes your day or week, including conflicts, prep needed, focus time and a daily briefing."
+    },
+    {
+      "id": "meeting-notes",
+      "name": "Meeting Notes",
+      "description": "Turns meeting transcripts or rough notes from your working folder into clean minutes with decisions, owners, due dates and a follow-up email draft."
+    }
+  ],
+  "workflows": ["daily-briefing"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "install_size_kb": 31,
+  "estimated_cost_usd": {
+    "min": 0.04,
+    "max": 0.4
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/README.md"
+}

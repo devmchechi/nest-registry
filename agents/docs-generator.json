@@ -1,0 +1,24 @@
+{
+  "id": "docs-generator",
+  "name": "Docs Generator",
+  "description": "Writes and updates READMEs, API references, docstrings and changelogs from your actual code, matching your project's voice and never documenting features that don't exist.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-engineering-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/docs-generator",
+  "tags": ["engineering", "documentation", "writing"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.4
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/agents/docs-generator/README.md"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "email-triager",
+  "name": "Email Triager",
+  "description": "Sorts exported emails (.eml, .mbox, text) from your working folder into what needs action, replies or reading, and drafts short replies. Fully offline.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-personal-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/email-triager",
+  "tags": ["personal", "email", "productivity", "offline"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/agents/email-triager/README.md"
+}

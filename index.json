@@ -1,0 +1,578 @@
+{
+  "schema_version": 1,
+  "agents": [
+    {
+      "id": "data-fetcher",
+      "name": "Data Fetcher",
+      "description": "Loads CSV and JSON data from your working folder or allowlisted URLs, validates and cleans it, and saves tidy datasets plus a data-quality profile for analysis.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-analytics-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/data-fetcher",
+      "tags": ["analytics", "data", "csv", "etl"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": ["raw.githubusercontent.com"],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.12
+      }
+    },
+    {
+      "id": "chart-generator",
+      "name": "Chart Generator",
+      "description": "Creates clear, honest charts (PNG or SVG) from CSV/JSON data in your working folder, picking the right chart type and labeling everything a reader needs.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-analytics-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/chart-generator",
+      "tags": ["analytics", "charts", "visualization"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.12
+      }
+    },
+    {
+      "id": "report-writer",
+      "name": "Report Writer",
+      "description": "Writes concise metrics reports from your data and charts, with KPIs against targets, notable changes, verified numbers and clear next questions, in Markdown for your team.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-analytics-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/report-writer",
+      "tags": ["analytics", "reporting", "kpis"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.18
+      }
+    },
+    {
+      "id": "blog-draft-writer",
+      "name": "Blog Draft Writer",
+      "description": "Turns a topic, outline or rough notes into a well-structured, publish-ready blog draft in your voice, with headline options, meta description and a clear call to action.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-content-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/blog-draft-writer",
+      "tags": ["content", "writing", "blogging", "marketing"],
+      "capabilities": {
+        "tools": ["read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.2
+      }
+    },
+    {
+      "id": "newsletter-formatter",
+      "name": "Newsletter Formatter",
+      "description": "Assembles posts, links and announcements into a polished newsletter issue, with subject lines, preview text, Markdown and email-safe HTML ready to paste into your email tool.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-content-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/newsletter-formatter",
+      "tags": ["content", "newsletter", "email", "marketing"],
+      "capabilities": {
+        "tools": ["read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.12
+      }
+    },
+    {
+      "id": "seo-analyzer",
+      "name": "SEO Analyzer",
+      "description": "Audits a draft or HTML page for on-page SEO and readability (keyword use, titles, headings, meta, links, structure) and returns a prioritized fix list with rewrites.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-content-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/seo-analyzer",
+      "tags": ["content", "seo", "marketing", "audit"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      }
+    },
+    {
+      "id": "code-reviewer",
+      "name": "Code Reviewer",
+      "description": "Reviews a git diff or set of files like a senior engineer, finding real bugs, security issues and risky changes, with file and line references and concrete fixes.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-engineering-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/code-reviewer",
+      "tags": ["engineering", "code-review", "security", "git"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.4
+      }
+    },
+    {
+      "id": "test-writer",
+      "name": "Test Writer",
+      "description": "Writes focused, idiomatic unit and integration tests for your code using the project's existing framework, runs them when possible, and reports coverage gaps.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-engineering-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/test-writer",
+      "tags": ["engineering", "testing", "quality"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.03,
+        "max": 0.5
+      }
+    },
+    {
+      "id": "docs-generator",
+      "name": "Docs Generator",
+      "description": "Writes and updates READMEs, API references, docstrings and changelogs from your actual code, matching your project's voice and never documenting features that don't exist.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-engineering-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/docs-generator",
+      "tags": ["engineering", "documentation", "writing"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.4
+      }
+    },
+    {
+      "id": "pr-summarizer",
+      "name": "PR Summarizer",
+      "description": "Summarizes a pull request or branch diff into a clear description covering what changed, why, risk, testing and reviewer focus. Works on local repos and public GitHub PRs.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-engineering-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/pr-summarizer",
+      "tags": ["engineering", "pull-requests", "git", "github"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "list_dir"],
+        "network": ["api.github.com"],
+        "pilots": [],
+        "requires_approval": ["shell"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.15
+      }
+    },
+    {
+      "id": "email-triager",
+      "name": "Email Triager",
+      "description": "Sorts exported emails (.eml, .mbox, text) from your working folder into what needs action, replies or reading, and drafts short replies. Fully offline.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-personal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/email-triager",
+      "tags": ["personal", "email", "productivity", "offline"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.2
+      }
+    },
+    {
+      "id": "calendar-summarizer",
+      "name": "Calendar Summarizer",
+      "description": "Reads exported calendars (.ics or CSV) from your working folder and summarizes your day or week, including conflicts, prep needed, focus time and a daily briefing.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-personal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/calendar-summarizer",
+      "tags": ["personal", "calendar", "productivity", "offline"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      }
+    },
+    {
+      "id": "meeting-notes",
+      "name": "Meeting Notes",
+      "description": "Turns meeting transcripts or rough notes from your working folder into clean minutes with decisions, owners, due dates and a follow-up email draft.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-personal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/meeting-notes",
+      "tags": ["personal", "meetings", "notes", "productivity", "offline"],
+      "capabilities": {
+        "tools": ["read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.12
+      }
+    },
+    {
+      "id": "arxiv-researcher",
+      "name": "ArXiv Researcher",
+      "description": "Searches arXiv and Semantic Scholar for papers on a topic, ranks them by relevance and impact, and saves a clean shortlist with links and metadata.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-research-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/arxiv-researcher",
+      "tags": ["research", "papers", "arxiv", "search"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": ["export.arxiv.org", "api.semanticscholar.org"],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.15
+      }
+    },
+    {
+      "id": "paper-summarizer",
+      "name": "Paper Summarizer",
+      "description": "Reads research papers (PDF, text, or abstracts) from your working folder and writes structured, faithful summaries with methods, results, limitations and takeaways.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-research-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/paper-summarizer",
+      "tags": ["research", "papers", "summaries", "pdf"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.3
+      }
+    },
+    {
+      "id": "citation-formatter",
+      "name": "Citation Formatter",
+      "description": "Turns DOIs, arXiv IDs, titles or messy reference lists into verified BibTeX, APA 7 and MLA 9 citations, using Crossref and arXiv metadata.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-research-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/citation-formatter",
+      "tags": ["research", "citations", "bibtex", "writing"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": ["api.crossref.org", "export.arxiv.org"],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.08
+      }
+    }
+  ],
+  "packs": [
+    {
+      "id": "analytics-pack",
+      "name": "Analytics Pack",
+      "description": "Load and validate CSV/JSON data, chart it honestly, and write a daily KPI report where every number is computed.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-analytics-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": ["analytics", "data", "charts", "reporting"],
+      "agents": [
+        {
+          "id": "data-fetcher",
+          "name": "Data Fetcher",
+          "description": "Loads CSV and JSON data from your working folder or allowlisted URLs, validates and cleans it, and saves tidy datasets plus a data-quality profile for analysis."
+        },
+        {
+          "id": "chart-generator",
+          "name": "Chart Generator",
+          "description": "Creates clear, honest charts (PNG or SVG) from CSV/JSON data in your working folder, picking the right chart type and labeling everything a reader needs."
+        },
+        {
+          "id": "report-writer",
+          "name": "Report Writer",
+          "description": "Writes concise metrics reports from your data and charts, with KPIs against targets, notable changes, verified numbers and clear next questions, in Markdown for your team."
+        }
+      ],
+      "workflows": ["daily-metrics"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": ["raw.githubusercontent.com"],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "install_size_kb": 30,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.45
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/README.md"
+    },
+    {
+      "id": "content-pack",
+      "name": "Content Pack",
+      "description": "Draft blog posts in your voice, audit them for SEO, and assemble a paste-ready newsletter issue each week.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-content-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": ["content", "writing", "seo", "newsletter"],
+      "agents": [
+        {
+          "id": "blog-draft-writer",
+          "name": "Blog Draft Writer",
+          "description": "Turns a topic, outline or rough notes into a well-structured, publish-ready blog draft in your voice, with headline options, meta description and a clear call to action."
+        },
+        {
+          "id": "newsletter-formatter",
+          "name": "Newsletter Formatter",
+          "description": "Assembles posts, links and announcements into a polished newsletter issue, with subject lines, preview text, Markdown and email-safe HTML ready to paste into your email tool."
+        },
+        {
+          "id": "seo-analyzer",
+          "name": "SEO Analyzer",
+          "description": "Audits a draft or HTML page for on-page SEO and readability (keyword use, titles, headings, meta, links, structure) and returns a prioritized fix list with rewrites."
+        }
+      ],
+      "workflows": ["weekly-content"],
+      "capabilities": {
+        "tools": ["read_file", "write_file", "list_dir", "shell"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["write_file", "shell"]
+      },
+      "install_size_kb": 30,
+      "estimated_cost_usd": {
+        "min": 0.06,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/README.md"
+    },
+    {
+      "id": "engineering-pack",
+      "name": "Engineering Pack",
+      "description": "Review code, write tests, generate docs and summarize pull requests for the git repository in your working folder.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-engineering-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": ["engineering", "code-review", "testing", "documentation"],
+      "agents": [
+        {
+          "id": "code-reviewer",
+          "name": "Code Reviewer",
+          "description": "Reviews a git diff or set of files like a senior engineer, finding real bugs, security issues and risky changes, with file and line references and concrete fixes."
+        },
+        {
+          "id": "test-writer",
+          "name": "Test Writer",
+          "description": "Writes focused, idiomatic unit and integration tests for your code using the project's existing framework, runs them when possible, and reports coverage gaps."
+        },
+        {
+          "id": "docs-generator",
+          "name": "Docs Generator",
+          "description": "Writes and updates READMEs, API references, docstrings and changelogs from your actual code, matching your project's voice and never documenting features that don't exist."
+        },
+        {
+          "id": "pr-summarizer",
+          "name": "PR Summarizer",
+          "description": "Summarizes a pull request or branch diff into a clear description covering what changed, why, risk, testing and reviewer focus. Works on local repos and public GitHub PRs."
+        }
+      ],
+      "workflows": ["pr-review"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "list_dir", "write_file"],
+        "network": ["api.github.com"],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "install_size_kb": 38,
+      "estimated_cost_usd": {
+        "min": 0.08,
+        "max": 0.9
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-engineering-pack/HEAD/README.md"
+    },
+    {
+      "id": "personal-pack",
+      "name": "Personal Pack",
+      "description": "Offline email triage, calendar summaries and meeting minutes from files you export, combined into a daily briefing.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-personal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": ["personal", "productivity", "email", "calendar", "offline"],
+      "agents": [
+        {
+          "id": "email-triager",
+          "name": "Email Triager",
+          "description": "Sorts exported emails (.eml, .mbox, text) from your working folder into what needs action, replies or reading, and drafts short replies. Fully offline."
+        },
+        {
+          "id": "calendar-summarizer",
+          "name": "Calendar Summarizer",
+          "description": "Reads exported calendars (.ics or CSV) from your working folder and summarizes your day or week, including conflicts, prep needed, focus time and a daily briefing."
+        },
+        {
+          "id": "meeting-notes",
+          "name": "Meeting Notes",
+          "description": "Turns meeting transcripts or rough notes from your working folder into clean minutes with decisions, owners, due dates and a follow-up email draft."
+        }
+      ],
+      "workflows": ["daily-briefing"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "install_size_kb": 31,
+      "estimated_cost_usd": {
+        "min": 0.04,
+        "max": 0.4
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-personal-pack/HEAD/README.md"
+    },
+    {
+      "id": "research-pack",
+      "name": "Research Pack",
+      "description": "Search arXiv and Semantic Scholar, summarize papers faithfully, and produce verified citations, chained into a literature review.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-research-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": ["research", "papers", "citations", "academic"],
+      "agents": [
+        {
+          "id": "arxiv-researcher",
+          "name": "ArXiv Researcher",
+          "description": "Searches arXiv and Semantic Scholar for papers on a topic, ranks them by relevance and impact, and saves a clean shortlist with links and metadata."
+        },
+        {
+          "id": "paper-summarizer",
+          "name": "Paper Summarizer",
+          "description": "Reads research papers (PDF, text, or abstracts) from your working folder and writes structured, faithful summaries with methods, results, limitations and takeaways."
+        },
+        {
+          "id": "citation-formatter",
+          "name": "Citation Formatter",
+          "description": "Turns DOIs, arXiv IDs, titles or messy reference lists into verified BibTeX, APA 7 and MLA 9 citations, using Crossref and arXiv metadata."
+        }
+      ],
+      "workflows": ["literature-review"],
+      "capabilities": {
+        "tools": ["shell", "read_file", "write_file", "list_dir"],
+        "network": [
+          "export.arxiv.org",
+          "api.semanticscholar.org",
+          "api.crossref.org"
+        ],
+        "pilots": [],
+        "requires_approval": ["shell", "write_file"]
+      },
+      "install_size_kb": 32,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.6
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/README.md"
+    }
+  ]
+}

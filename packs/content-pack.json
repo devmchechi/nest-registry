@@ -1,0 +1,42 @@
+{
+  "id": "content-pack",
+  "name": "Content Pack",
+  "description": "Draft blog posts in your voice, audit them for SEO, and assemble a paste-ready newsletter issue each week.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-content-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": ["content", "writing", "seo", "newsletter"],
+  "agents": [
+    {
+      "id": "blog-draft-writer",
+      "name": "Blog Draft Writer",
+      "description": "Turns a topic, outline or rough notes into a well-structured, publish-ready blog draft in your voice, with headline options, meta description and a clear call to action."
+    },
+    {
+      "id": "newsletter-formatter",
+      "name": "Newsletter Formatter",
+      "description": "Assembles posts, links and announcements into a polished newsletter issue, with subject lines, preview text, Markdown and email-safe HTML ready to paste into your email tool."
+    },
+    {
+      "id": "seo-analyzer",
+      "name": "SEO Analyzer",
+      "description": "Audits a draft or HTML page for on-page SEO and readability (keyword use, titles, headings, meta, links, structure) and returns a prioritized fix list with rewrites."
+    }
+  ],
+  "workflows": ["weekly-content"],
+  "capabilities": {
+    "tools": ["read_file", "write_file", "list_dir", "shell"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["write_file", "shell"]
+  },
+  "install_size_kb": 30,
+  "estimated_cost_usd": {
+    "min": 0.06,
+    "max": 0.5
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/README.md"
+}

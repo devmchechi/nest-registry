@@ -1,0 +1,24 @@
+{
+  "id": "data-fetcher",
+  "name": "Data Fetcher",
+  "description": "Loads CSV and JSON data from your working folder or allowlisted URLs, validates and cleans it, and saves tidy datasets plus a data-quality profile for analysis.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-analytics-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/data-fetcher",
+  "tags": ["analytics", "data", "csv", "etl"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": ["raw.githubusercontent.com"],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.12
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/data-fetcher/README.md"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "blog-draft-writer",
+  "name": "Blog Draft Writer",
+  "description": "Turns a topic, outline or rough notes into a well-structured, publish-ready blog draft in your voice, with headline options, meta description and a clear call to action.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-content-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/blog-draft-writer",
+  "tags": ["content", "writing", "blogging", "marketing"],
+  "capabilities": {
+    "tools": ["read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/agents/blog-draft-writer/README.md"
+}

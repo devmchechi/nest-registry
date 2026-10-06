@@ -1,0 +1,42 @@
+{
+  "id": "analytics-pack",
+  "name": "Analytics Pack",
+  "description": "Load and validate CSV/JSON data, chart it honestly, and write a daily KPI report where every number is computed.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-analytics-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": ["analytics", "data", "charts", "reporting"],
+  "agents": [
+    {
+      "id": "data-fetcher",
+      "name": "Data Fetcher",
+      "description": "Loads CSV and JSON data from your working folder or allowlisted URLs, validates and cleans it, and saves tidy datasets plus a data-quality profile for analysis."
+    },
+    {
+      "id": "chart-generator",
+      "name": "Chart Generator",
+      "description": "Creates clear, honest charts (PNG or SVG) from CSV/JSON data in your working folder, picking the right chart type and labeling everything a reader needs."
+    },
+    {
+      "id": "report-writer",
+      "name": "Report Writer",
+      "description": "Writes concise metrics reports from your data and charts, with KPIs against targets, notable changes, verified numbers and clear next questions, in Markdown for your team."
+    }
+  ],
+  "workflows": ["daily-metrics"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": ["raw.githubusercontent.com"],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "install_size_kb": 30,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.45
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/README.md"
+}

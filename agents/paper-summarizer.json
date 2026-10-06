@@ -1,0 +1,24 @@
+{
+  "id": "paper-summarizer",
+  "name": "Paper Summarizer",
+  "description": "Reads research papers (PDF, text, or abstracts) from your working folder and writes structured, faithful summaries with methods, results, limitations and takeaways.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-research-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/paper-summarizer",
+  "tags": ["research", "papers", "summaries", "pdf"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.3
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/agents/paper-summarizer/README.md"
+}

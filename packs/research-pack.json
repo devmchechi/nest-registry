@@ -1,0 +1,46 @@
+{
+  "id": "research-pack",
+  "name": "Research Pack",
+  "description": "Search arXiv and Semantic Scholar, summarize papers faithfully, and produce verified citations, chained into a literature review.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-research-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": ["research", "papers", "citations", "academic"],
+  "agents": [
+    {
+      "id": "arxiv-researcher",
+      "name": "ArXiv Researcher",
+      "description": "Searches arXiv and Semantic Scholar for papers on a topic, ranks them by relevance and impact, and saves a clean shortlist with links and metadata."
+    },
+    {
+      "id": "paper-summarizer",
+      "name": "Paper Summarizer",
+      "description": "Reads research papers (PDF, text, or abstracts) from your working folder and writes structured, faithful summaries with methods, results, limitations and takeaways."
+    },
+    {
+      "id": "citation-formatter",
+      "name": "Citation Formatter",
+      "description": "Turns DOIs, arXiv IDs, titles or messy reference lists into verified BibTeX, APA 7 and MLA 9 citations, using Crossref and arXiv metadata."
+    }
+  ],
+  "workflows": ["literature-review"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": [
+      "export.arxiv.org",
+      "api.semanticscholar.org",
+      "api.crossref.org"
+    ],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "install_size_kb": 32,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.6
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-research-pack/HEAD/README.md"
+}

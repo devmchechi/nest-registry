@@ -1,0 +1,24 @@
+{
+  "id": "newsletter-formatter",
+  "name": "Newsletter Formatter",
+  "description": "Assembles posts, links and announcements into a polished newsletter issue, with subject lines, preview text, Markdown and email-safe HTML ready to paste into your email tool.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-content-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/newsletter-formatter",
+  "tags": ["content", "newsletter", "email", "marketing"],
+  "capabilities": {
+    "tools": ["read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.12
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-content-pack/HEAD/agents/newsletter-formatter/README.md"
+}

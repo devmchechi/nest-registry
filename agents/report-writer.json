@@ -1,0 +1,24 @@
+{
+  "id": "report-writer",
+  "name": "Report Writer",
+  "description": "Writes concise metrics reports from your data and charts, with KPIs against targets, notable changes, verified numbers and clear next questions, in Markdown for your team.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-analytics-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/report-writer",
+  "tags": ["analytics", "reporting", "kpis"],
+  "capabilities": {
+    "tools": ["shell", "read_file", "write_file", "list_dir"],
+    "network": [],
+    "pilots": [],
+    "requires_approval": ["shell", "write_file"]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.18
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-analytics-pack/HEAD/agents/report-writer/README.md"
+}
