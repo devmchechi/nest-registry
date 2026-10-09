@@ -2,6 +2,262 @@
   "schema_version": 1,
   "agents": [
     {
+      "id": "invoice-reconciler",
+      "name": "Invoice Reconciler",
+      "description": "Matches supplier invoices and receipts against bank statement CSVs, parses line items, and flags discrepancies and missing receipts.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-finance-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/invoice-reconciler",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+      "signature": "ed25519:9BQsaPl3T86oYovVbNPhyPk3b73W9qBRwzneyQLi0Ym4IeSQxeuEB+IjFMeq0A/LWFQ/o+cwRMnZSU4sf72YBA=="
+    },
+    {
+      "id": "cashflow-forecaster",
+      "name": "Cashflow Forecaster",
+      "description": "Analyzes receivables, payables, and historical burn rate from bank CSVs to project 30/60/90-day liquidity and detect cash shortfalls.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-finance-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/cashflow-forecaster",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+      "signature": "ed25519:yhIHOHVTvTUpcvXddGV853mWw1a58iYw/6aLt475DlhY2XdhaCeJkjNDRDjsyLFNJewddhgh42lXF4iDj1FVDA=="
+    },
+    {
+      "id": "financial-auditor",
+      "name": "Financial Auditor",
+      "description": "Performs variance analysis and computes solvency and liquidity ratios from P&L, balance sheets, and SEC EDGAR 10-K/10-Q filings.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-finance-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/financial-auditor",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+      "signature": "ed25519:S99bwOsEbqXNEaGgvrp3eTF9hh1V5dPWTSmoleH1M6EjrGiVJMZIKNJ0nEkELVAvSI3MBk3eCXi39pC9QTIaDQ=="
+    },
+    {
+      "id": "ar-collections",
+      "name": "AR Collections Specialist",
+      "description": "Scans aged accounts receivable reports, groups past-due accounts by risk tier, drafts professional reminders, and tracks payment commitments.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-finance-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/ar-collections",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+      "signature": "ed25519:8P3RDBo4IoDI+zK2TMYtgktGNq++AGs3xbWExkAWdAvc80mFajdAfmf1mQJysiIOI9H4Th5Vq8yq+f5PYq3vAw=="
+    },
+    {
+      "id": "market-sentiment-scout",
+      "name": "Market Sentiment Scout",
+      "description": "Scans financial news, earnings call transcripts, and market filings for catalyst sentiment and risks without generative hallucinations.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-trading-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/market-sentiment-scout",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
+      "signature": "ed25519:b5FUh/GHuvElWpJGC+yydLkDxGigdktdcu78Uu6XY6rEPGQ+elx37ZUcEXfsNDBFWin15ce+Q+cXAGrp39iUAA=="
+    },
+    {
+      "id": "quant-backtester",
+      "name": "Quant Strategy Backtester",
+      "description": "Tests algorithmic trading strategies on historical OHLCV CSV data using Python to report CAGR, Sharpe ratio, and maximum drawdown.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-trading-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/quant-backtester",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
+      "signature": "ed25519:Sfit8zsfKjrXOrz37kgz44IOLK7p9qYeu2PfmK2l7fnluQi3zF/cVb61+D5VWIb6uSNUoC+Bhm4ksUYgC2QzAw=="
+    },
+    {
+      "id": "trade-journal-auditor",
+      "name": "Trade Journal Auditor",
+      "description": "Audits executed trade CSV logs from brokers to detect revenge trading, stop-loss non-compliance, and risk-to-reward asymmetry.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-trading-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/trade-journal-auditor",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
+      "signature": "ed25519:UTuZqFq/vV0ZFQ/LcAmYSfjYk3t3N0J7UlHBZ+oclwfnfZg4To9ca8NQut03v8ndCUNts/SGVdaz5TJQy13aBA=="
+    },
+    {
+      "id": "portfolio-rebalancer",
+      "name": "Portfolio Rebalancer",
+      "description": "Calculates drift between target asset allocations and current holdings, generating disciplined rebalancing orders for review.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-trading-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/portfolio-rebalancer",
+      "tags": [],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.1
+      },
+      "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
+      "signature": "ed25519:u7GUS8rNy+8Y0Cmx9komatZMdxJC6aMcT9eUiCjKuymddojcJn484LY5tNy0+PyzzOg7jMlF6GhOA+ZPMAYjCw=="
+    },
+    {
       "id": "data-fetcher",
       "name": "Data Fetcher",
       "description": "Loads CSV and JSON data from your working folder or allowlisted URLs, validates and cleans it, and saves tidy datasets plus a data-quality profile for analysis.",
@@ -590,6 +846,124 @@
     }
   ],
   "packs": [
+    {
+      "id": "finance-pack",
+      "name": "Finance Pack",
+      "description": "Automated invoice reconciliation, cash flow forecasting, financial statement analysis, and AR collections for small businesses and finance teams.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-finance-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [],
+      "agents": [
+        {
+          "id": "invoice-reconciler",
+          "name": "Invoice Reconciler",
+          "description": "Matches supplier invoices and receipts against bank statement CSVs, parses line items, and flags discrepancies and missing receipts."
+        },
+        {
+          "id": "cashflow-forecaster",
+          "name": "Cashflow Forecaster",
+          "description": "Analyzes receivables, payables, and historical burn rate from bank CSVs to project 30/60/90-day liquidity and detect cash shortfalls."
+        },
+        {
+          "id": "financial-auditor",
+          "name": "Financial Auditor",
+          "description": "Performs variance analysis and computes solvency and liquidity ratios from P&L, balance sheets, and SEC EDGAR 10-K/10-Q filings."
+        },
+        {
+          "id": "ar-collections",
+          "name": "AR Collections Specialist",
+          "description": "Scans aged accounts receivable reports, groups past-due accounts by risk tier, drafts professional reminders, and tracks payment commitments."
+        }
+      ],
+      "workflows": [
+        "weekly-financial-audit"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 24,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/README.md",
+      "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+      "signature": "ed25519:qgIMHtcGY2uiXqDU4sQ8ERb+Ub3wF5gVOuBafASKXfctdSpUCJtSOlasDn+jjbQZRS3Pfjbq/gFSk+mGtzJtBw=="
+    },
+    {
+      "id": "trading-pack",
+      "name": "Trading & Risk Pack",
+      "description": "Algorithmic market news sentiment analysis, quant strategy backtesting, trade journal behavioral auditing, and multi-asset portfolio rebalancing.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-trading-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [],
+      "agents": [
+        {
+          "id": "market-sentiment-scout",
+          "name": "Market Sentiment Scout",
+          "description": "Scans financial news, earnings call transcripts, and market filings for catalyst sentiment and risks without generative hallucinations."
+        },
+        {
+          "id": "quant-backtester",
+          "name": "Quant Strategy Backtester",
+          "description": "Tests algorithmic trading strategies on historical OHLCV CSV data using Python to report CAGR, Sharpe ratio, and maximum drawdown."
+        },
+        {
+          "id": "trade-journal-auditor",
+          "name": "Trade Journal Auditor",
+          "description": "Audits executed trade CSV logs from brokers to detect revenge trading, stop-loss non-compliance, and risk-to-reward asymmetry."
+        },
+        {
+          "id": "portfolio-rebalancer",
+          "name": "Portfolio Rebalancer",
+          "description": "Calculates drift between target asset allocations and current holdings, generating disciplined rebalancing orders for review."
+        }
+      ],
+      "workflows": [
+        "daily-trading-briefing"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 23,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-trading-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-trading-pack/HEAD/README.md",
+      "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
+      "signature": "ed25519:jfW6TcJXHUpQ7bL7yehQzQAMXZStsFThJqDxFTLfxV8TMFkFqQD03gHfTMHM8tA/GBK/nwRS/AcxDsmO1gjuAA=="
+    },
     {
       "id": "analytics-pack",
       "name": "Analytics Pack",

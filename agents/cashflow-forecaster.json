@@ -1,0 +1,34 @@
+{
+  "id": "cashflow-forecaster",
+  "name": "Cashflow Forecaster",
+  "description": "Analyzes receivables, payables, and historical burn rate from bank CSVs to project 30/60/90-day liquidity and detect cash shortfalls.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-finance-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/cashflow-forecaster",
+  "tags": [],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/agents/cashflow-forecaster/README.md",
+  "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+  "signature": "ed25519:yhIHOHVTvTUpcvXddGV853mWw1a58iYw/6aLt475DlhY2XdhaCeJkjNDRDjsyLFNJewddhgh42lXF4iDj1FVDA=="
+}

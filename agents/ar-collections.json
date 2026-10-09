@@ -1,0 +1,34 @@
+{
+  "id": "ar-collections",
+  "name": "AR Collections Specialist",
+  "description": "Scans aged accounts receivable reports, groups past-due accounts by risk tier, drafts professional reminders, and tracks payment commitments.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-finance-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/ar-collections",
+  "tags": [],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/agents/ar-collections/README.md",
+  "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+  "signature": "ed25519:8P3RDBo4IoDI+zK2TMYtgktGNq++AGs3xbWExkAWdAvc80mFajdAfmf1mQJysiIOI9H4Th5Vq8yq+f5PYq3vAw=="
+}

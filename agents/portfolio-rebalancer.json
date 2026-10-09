@@ -1,0 +1,34 @@
+{
+  "id": "portfolio-rebalancer",
+  "name": "Portfolio Rebalancer",
+  "description": "Calculates drift between target asset allocations and current holdings, generating disciplined rebalancing orders for review.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-trading-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/portfolio-rebalancer",
+  "tags": [],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-trading-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-trading-pack/HEAD/agents/portfolio-rebalancer/README.md",
+  "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
+  "signature": "ed25519:u7GUS8rNy+8Y0Cmx9komatZMdxJC6aMcT9eUiCjKuymddojcJn484LY5tNy0+PyzzOg7jMlF6GhOA+ZPMAYjCw=="
+}

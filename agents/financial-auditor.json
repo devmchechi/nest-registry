@@ -1,0 +1,34 @@
+{
+  "id": "financial-auditor",
+  "name": "Financial Auditor",
+  "description": "Performs variance analysis and computes solvency and liquidity ratios from P&L, balance sheets, and SEC EDGAR 10-K/10-Q filings.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-finance-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/financial-auditor",
+  "tags": [],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-finance-pack/HEAD/agents/financial-auditor/README.md",
+  "commit": "f94f5ea6353f21a64d73068598bb294fbe527abe",
+  "signature": "ed25519:S99bwOsEbqXNEaGgvrp3eTF9hh1V5dPWTSmoleH1M6EjrGiVJMZIKNJ0nEkELVAvSI3MBk3eCXi39pC9QTIaDQ=="
+}

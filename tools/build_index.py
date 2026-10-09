@@ -43,6 +43,8 @@ RAW = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/{path}"
 
 # pack folder -> GitHub repo name
 PACK_REPOS = {
+    "finance-pack": "nest-finance-pack",
+    "trading-pack": "nest-trading-pack",
     "research-pack": "nest-research-pack",
     "engineering-pack": "nest-engineering-pack",
     "content-pack": "nest-content-pack",
@@ -60,6 +62,14 @@ STEP_OUTPUT_RE = re.compile(r"^([A-Za-z0-9_.-]+?)\.output$")
 
 SEED = {
     "agents": {
+        "invoice-reconciler": (["finance", "invoices", "reconciliation", "accounting"], 0.01, 0.15),
+        "cashflow-forecaster": (["finance", "cashflow", "runway", "treasury"], 0.02, 0.20),
+        "financial-auditor": (["finance", "audit", "statements", "sec", "ratios"], 0.02, 0.25),
+        "ar-collections": (["finance", "collections", "invoices", "receivables"], 0.01, 0.15),
+        "market-sentiment-scout": (["trading", "sentiment", "news", "markets", "stocks"], 0.01, 0.20),
+        "quant-backtester": (["trading", "quant", "backtesting", "python", "algorithmic"], 0.02, 0.30),
+        "trade-journal-auditor": (["trading", "journal", "risk", "psychology", "discipline"], 0.01, 0.15),
+        "portfolio-rebalancer": (["trading", "portfolio", "rebalancing", "allocation", "risk"], 0.01, 0.15),
         "arxiv-researcher": (["research", "papers", "arxiv", "search"], 0.01, 0.15),
         "paper-summarizer": (["research", "papers", "summaries", "pdf"], 0.02, 0.30),
         "citation-formatter": (["research", "citations", "bibtex", "writing"], 0.01, 0.08),
@@ -78,6 +88,8 @@ SEED = {
         "meeting-notes": (["personal", "meetings", "notes", "productivity", "offline"], 0.01, 0.12),
     },
     "packs": {
+        "finance-pack": (["finance", "accounting", "invoices", "cashflow", "smb", "corporate"], 0.05, 0.50),
+        "trading-pack": (["trading", "markets", "stocks", "quant", "sentiment", "portfolio"], 0.05, 0.50),
         "research-pack": (["research", "papers", "citations", "academic"], 0.05, 0.60),
         "engineering-pack": (["engineering", "code-review", "testing", "documentation"], 0.08, 0.90),
         "content-pack": (["content", "writing", "seo", "newsletter"], 0.06, 0.50),
@@ -444,6 +456,9 @@ def main() -> int:
     check = "--check" in sys.argv[1:]
     pack_dirs = sorted(p for p in PACKS_ROOT.iterdir() if (p / ".nest" / "manifest.yaml").is_file())
     packs = [p for p in (load_pack(d) for d in pack_dirs) if p]
+    # Prioritize Finance Pack at #1 and Trading & Risk Pack at #2
+    priority = {"finance-pack": 0, "trading-pack": 1}
+    packs.sort(key=lambda p: (priority.get(p["id"], 2), p["id"]))
 
     # IDs must be unique across every pack (a user may install them all)
     seen: dict[str, str] = {}
