@@ -1,0 +1,40 @@
+{
+  "id": "churn-winback-specialist",
+  "name": "Churn Win-Back Specialist",
+  "description": "Detects inactive customers from transaction histories and drafts enticing re-engagement offers.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-local-marketing-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/churn-winback-specialist",
+  "tags": [
+    "marketing",
+    "retention",
+    "win-back",
+    "churn",
+    "loyalty"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/agents/churn-winback-specialist/README.md",
+  "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+  "signature": "ed25519:ZEH4ruSPKTBxmhfCjYV0i3Ms76b+ltUY7tjO9QojwrwC2TyByHfazVzxaw1/nYu352tADbYhjubChq1dFX9xDg=="
+}

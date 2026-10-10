@@ -1,0 +1,40 @@
+{
+  "id": "promo-campaign-builder",
+  "name": "Promo Campaign Builder",
+  "description": "Creates cohesive promotional campaigns across SMS, email newsletters, and social media.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-local-marketing-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/promo-campaign-builder",
+  "tags": [
+    "marketing",
+    "promotions",
+    "sms",
+    "email",
+    "social"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.25
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/agents/promo-campaign-builder/README.md",
+  "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+  "signature": "ed25519:Fo5t4JEbejJq65Qv9b554TR8ZAtjI4r4FKNlXPFCkPmG71sxU/7E6a6NrhyvNPV2grVUQI3MMRriKTfGQRLxAA=="
+}

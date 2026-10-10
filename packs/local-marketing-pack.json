@@ -1,0 +1,60 @@
+{
+  "id": "local-marketing-pack",
+  "name": "Local SMB Marketing Pack",
+  "description": "Local SEO and Google Business Profile optimization, multi-channel promotional campaign generation, and customer retention churn win-back.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-local-marketing-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "marketing",
+    "smb",
+    "local-seo",
+    "promotions",
+    "retention"
+  ],
+  "agents": [
+    {
+      "id": "local-seo-optimizer",
+      "name": "Local SEO Optimizer",
+      "description": "Audits Google Business Profiles and localized service page copy for local geo-search rankings."
+    },
+    {
+      "id": "promo-campaign-builder",
+      "name": "Promo Campaign Builder",
+      "description": "Creates cohesive promotional campaigns across SMS, email newsletters, and social media."
+    },
+    {
+      "id": "churn-winback-specialist",
+      "name": "Churn Win-Back Specialist",
+      "description": "Detects inactive customers from transaction histories and drafts enticing re-engagement offers."
+    }
+  ],
+  "workflows": [
+    "local-growth-and-retention-pipeline"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "install_size_kb": 19,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.5
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/README.md",
+  "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+  "signature": "ed25519:FOJZTnJ+rLKJwB2PGfIUvX180pc2WsjETsvtJSaoe8Omy+ORvxS1idt6IZOYeao+sPMCJpidzzcwL6knKq8wBQ=="
+}

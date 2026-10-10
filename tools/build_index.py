@@ -45,6 +45,9 @@ RAW = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/{path}"
 PACK_REPOS = {
     "finance-pack": "nest-finance-pack",
     "trading-pack": "nest-trading-pack",
+    "healthcare-pack": "nest-healthcare-pack",
+    "restaurant-pack": "nest-restaurant-pack",
+    "local-marketing-pack": "nest-local-marketing-pack",
     "legal-pack": "nest-legal-pack",
     "sales-pack": "nest-sales-pack",
     "devops-pack": "nest-devops-pack",
@@ -73,6 +76,15 @@ SEED = {
         "quant-backtester": (["trading", "quant", "backtesting", "python", "algorithmic"], 0.02, 0.30),
         "trade-journal-auditor": (["trading", "journal", "risk", "psychology", "discipline"], 0.01, 0.15),
         "portfolio-rebalancer": (["trading", "portfolio", "rebalancing", "allocation", "risk"], 0.01, 0.15),
+        "soap-note-assistant": (["healthcare", "clinical", "soap", "medical", "notes"], 0.02, 0.25),
+        "claim-denial-appealer": (["healthcare", "billing", "claims", "insurance", "appeals"], 0.02, 0.30),
+        "patient-intake-triager": (["healthcare", "intake", "triage", "safety", "allergies"], 0.01, 0.20),
+        "menu-margin-optimizer": (["restaurant", "menu", "food-cost", "pos", "pricing"], 0.02, 0.25),
+        "inventory-waste-tracker": (["restaurant", "inventory", "waste", "par-levels", "kitchen"], 0.01, 0.20),
+        "guest-review-responder": (["restaurant", "reviews", "reputation", "hospitality", "yelp"], 0.01, 0.15),
+        "local-seo-optimizer": (["marketing", "local-seo", "google-business", "maps", "smb"], 0.01, 0.20),
+        "promo-campaign-builder": (["marketing", "promotions", "sms", "email", "social"], 0.02, 0.25),
+        "churn-winback-specialist": (["marketing", "retention", "win-back", "churn", "loyalty"], 0.01, 0.20),
         "contract-redliner": (["legal", "contracts", "redline", "agreements"], 0.02, 0.25),
         "agreement-abstractor": (["legal", "milestones", "deadlines", "sla"], 0.01, 0.15),
         "compliance-checker": (["legal", "privacy", "gdpr", "ccpa", "security"], 0.02, 0.25),
@@ -102,6 +114,9 @@ SEED = {
     "packs": {
         "finance-pack": (["finance", "accounting", "invoices", "cashflow", "smb", "corporate"], 0.05, 0.50),
         "trading-pack": (["trading", "markets", "stocks", "quant", "sentiment", "portfolio"], 0.05, 0.50),
+        "healthcare-pack": (["healthcare", "clinical", "medical", "billing", "hipaa"], 0.05, 0.50),
+        "restaurant-pack": (["restaurant", "hospitality", "menu", "inventory", "food-cost"], 0.05, 0.50),
+        "local-marketing-pack": (["marketing", "smb", "local-seo", "promotions", "retention"], 0.05, 0.50),
         "legal-pack": (["legal", "contracts", "compliance", "procurement", "enterprise"], 0.05, 0.50),
         "sales-pack": (["sales", "gtm", "rfp", "leads", "outreach", "pipeline"], 0.05, 0.50),
         "devops-pack": (["devops", "sre", "security", "cve", "api", "reliability"], 0.05, 0.50),
@@ -475,11 +490,14 @@ def main() -> int:
     priority = {
         "finance-pack": 0,
         "trading-pack": 1,
-        "legal-pack": 2,
-        "sales-pack": 3,
-        "devops-pack": 4,
+        "healthcare-pack": 2,
+        "restaurant-pack": 3,
+        "local-marketing-pack": 4,
+        "legal-pack": 5,
+        "sales-pack": 6,
+        "devops-pack": 7,
     }
-    packs.sort(key=lambda p: (priority.get(p["id"], 5), p["id"]))
+    packs.sort(key=lambda p: (priority.get(p["id"], 8), p["id"]))
 
     # IDs must be unique across every pack (a user may install them all)
     seen: dict[str, str] = {}

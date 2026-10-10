@@ -1,0 +1,40 @@
+{
+  "id": "soap-note-assistant",
+  "name": "SOAP Note Assistant",
+  "description": "Converts clinician dictation notes and visit transcripts into standardized SOAP progress notes with ICD-10 and CPT coding suggestions.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-healthcare-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/soap-note-assistant",
+  "tags": [
+    "healthcare",
+    "clinical",
+    "soap",
+    "medical",
+    "notes"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.25
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/agents/soap-note-assistant/README.md",
+  "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+  "signature": "ed25519:4y+mpPCDlLJWBaT1tGUt6jgV7THshqRkZQcx+NBNQiehY2EveZnGFLgEVMw03/RSrNd6JAcDYQ/rK4FYx/fKAw=="
+}

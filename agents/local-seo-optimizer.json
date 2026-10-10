@@ -1,0 +1,40 @@
+{
+  "id": "local-seo-optimizer",
+  "name": "Local SEO Optimizer",
+  "description": "Audits Google Business Profiles and localized service page copy for local geo-search rankings.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-local-marketing-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/local-seo-optimizer",
+  "tags": [
+    "marketing",
+    "local-seo",
+    "google-business",
+    "maps",
+    "smb"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/agents/local-seo-optimizer/README.md",
+  "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+  "signature": "ed25519:6nfUEAD+3EBmDLUrWqfV3DReRXkVP0C+LQ0IEozwVA+S2F8s9nmeKnoTGY7z6I+hIwKAVIy9J9WYEldfUVjADg=="
+}

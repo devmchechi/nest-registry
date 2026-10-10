@@ -1,0 +1,40 @@
+{
+  "id": "claim-denial-appealer",
+  "name": "Claim Denial Appealer",
+  "description": "Analyzes insurance claim denial EOBs and drafts compelling appeal letters citing clinical justification.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-healthcare-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/claim-denial-appealer",
+  "tags": [
+    "healthcare",
+    "billing",
+    "claims",
+    "insurance",
+    "appeals"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.3
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/agents/claim-denial-appealer/README.md",
+  "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+  "signature": "ed25519:4W1wOByGE9nisQ7DzZ6fZ7VRP8qdza+Xr5Ml8v3GMCYPcEMkpJNYv/Xvf1w0Gh976NaJ2JjQAvBk4NGN9u5lBA=="
+}

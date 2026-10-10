@@ -258,6 +258,348 @@
       "signature": "ed25519:u7GUS8rNy+8Y0Cmx9komatZMdxJC6aMcT9eUiCjKuymddojcJn484LY5tNy0+PyzzOg7jMlF6GhOA+ZPMAYjCw=="
     },
     {
+      "id": "soap-note-assistant",
+      "name": "SOAP Note Assistant",
+      "description": "Converts clinician dictation notes and visit transcripts into standardized SOAP progress notes with ICD-10 and CPT coding suggestions.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-healthcare-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/soap-note-assistant",
+      "tags": [
+        "healthcare",
+        "clinical",
+        "soap",
+        "medical",
+        "notes"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.25
+      },
+      "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+      "signature": "ed25519:4y+mpPCDlLJWBaT1tGUt6jgV7THshqRkZQcx+NBNQiehY2EveZnGFLgEVMw03/RSrNd6JAcDYQ/rK4FYx/fKAw=="
+    },
+    {
+      "id": "claim-denial-appealer",
+      "name": "Claim Denial Appealer",
+      "description": "Analyzes insurance claim denial EOBs and drafts compelling appeal letters citing clinical justification.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-healthcare-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/claim-denial-appealer",
+      "tags": [
+        "healthcare",
+        "billing",
+        "claims",
+        "insurance",
+        "appeals"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.3
+      },
+      "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+      "signature": "ed25519:4W1wOByGE9nisQ7DzZ6fZ7VRP8qdza+Xr5Ml8v3GMCYPcEMkpJNYv/Xvf1w0Gh976NaJ2JjQAvBk4NGN9u5lBA=="
+    },
+    {
+      "id": "patient-intake-triager",
+      "name": "Patient Intake Triager",
+      "description": "Screens intake questionnaires to highlight allergies, drug interactions, and chronic conditions before patient exams.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-healthcare-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/patient-intake-triager",
+      "tags": [
+        "healthcare",
+        "intake",
+        "triage",
+        "safety",
+        "allergies"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.2
+      },
+      "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+      "signature": "ed25519:nH5w3ACpewvewi0RbRd+9RKM0g7PbIQMW9ax6K9zNVIbiuqD2841f6SP5XN+kZZnZ0SUFqI5pAGYtgUTBffWBg=="
+    },
+    {
+      "id": "menu-margin-optimizer",
+      "name": "Menu Margin Optimizer",
+      "description": "Performs recipe costing and sales volume analysis to classify dishes into Stars, Plowhorses, Puzzles, and Dogs.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-restaurant-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/menu-margin-optimizer",
+      "tags": [
+        "restaurant",
+        "menu",
+        "food-cost",
+        "pos",
+        "pricing"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.25
+      },
+      "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+      "signature": "ed25519:zE5dkokW6iLd331goGWJUNejCobkmpgTUm9dTGZghr2LKMKLScCbXgahKgeG52FCTNzR5CmgIko03rdwgEXdDQ=="
+    },
+    {
+      "id": "inventory-waste-tracker",
+      "name": "Inventory Waste Tracker",
+      "description": "Analyzes food prep sheets and spoilage logs to project accurate order par levels and reduce food waste.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-restaurant-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/inventory-waste-tracker",
+      "tags": [
+        "restaurant",
+        "inventory",
+        "waste",
+        "par-levels",
+        "kitchen"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.2
+      },
+      "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+      "signature": "ed25519:gY5u3Gtov/xVDdDMtEmkrfplVeFEiM+6SkJXLswCJB9FGc/HLyNpxg8kFFVYb7qXviNRxFU16A+9mwGH65bODg=="
+    },
+    {
+      "id": "guest-review-responder",
+      "name": "Guest Review Responder",
+      "description": "Monitors diner sentiment across platforms and drafts thoughtful, de-escalating review responses.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-restaurant-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/guest-review-responder",
+      "tags": [
+        "restaurant",
+        "reviews",
+        "reputation",
+        "hospitality",
+        "yelp"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.15
+      },
+      "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+      "signature": "ed25519:FAyRID/PLI+A2r6ARlVw4eSbGUL7JhHtCZS2CxxSiiYs6lnaaQLBrkao+c5ijnxDcV2TZvqcM+FLaJGaK7foCw=="
+    },
+    {
+      "id": "local-seo-optimizer",
+      "name": "Local SEO Optimizer",
+      "description": "Audits Google Business Profiles and localized service page copy for local geo-search rankings.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-local-marketing-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/local-seo-optimizer",
+      "tags": [
+        "marketing",
+        "local-seo",
+        "google-business",
+        "maps",
+        "smb"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.2
+      },
+      "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+      "signature": "ed25519:6nfUEAD+3EBmDLUrWqfV3DReRXkVP0C+LQ0IEozwVA+S2F8s9nmeKnoTGY7z6I+hIwKAVIy9J9WYEldfUVjADg=="
+    },
+    {
+      "id": "promo-campaign-builder",
+      "name": "Promo Campaign Builder",
+      "description": "Creates cohesive promotional campaigns across SMS, email newsletters, and social media.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-local-marketing-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/promo-campaign-builder",
+      "tags": [
+        "marketing",
+        "promotions",
+        "sms",
+        "email",
+        "social"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.25
+      },
+      "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+      "signature": "ed25519:Fo5t4JEbejJq65Qv9b554TR8ZAtjI4r4FKNlXPFCkPmG71sxU/7E6a6NrhyvNPV2grVUQI3MMRriKTfGQRLxAA=="
+    },
+    {
+      "id": "churn-winback-specialist",
+      "name": "Churn Win-Back Specialist",
+      "description": "Detects inactive customers from transaction histories and drafts enticing re-engagement offers.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-local-marketing-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/churn-winback-specialist",
+      "tags": [
+        "marketing",
+        "retention",
+        "win-back",
+        "churn",
+        "loyalty"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.2
+      },
+      "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+      "signature": "ed25519:ZEH4ruSPKTBxmhfCjYV0i3Ms76b+ltUY7tjO9QojwrwC2TyByHfazVzxaw1/nYu352tADbYhjubChq1dFX9xDg=="
+    },
+    {
       "id": "contract-redliner",
       "name": "Contract Redliner",
       "description": "Analyzes commercial contracts, NDAs, and MSAs against corporate playbooks to identify liability traps, IP assignment risks, and termination clauses.",
@@ -1302,6 +1644,186 @@
       "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-trading-pack/HEAD/README.md",
       "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
       "signature": "ed25519:jfW6TcJXHUpQ7bL7yehQzQAMXZStsFThJqDxFTLfxV8TMFkFqQD03gHfTMHM8tA/GBK/nwRS/AcxDsmO1gjuAA=="
+    },
+    {
+      "id": "healthcare-pack",
+      "name": "Healthcare & Practice Ops Pack",
+      "description": "Offline SOAP clinical notes synthesis, insurance claim denial appeals drafting, and patient intake triage for independent medical practices.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-healthcare-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [
+        "healthcare",
+        "clinical",
+        "medical",
+        "billing",
+        "hipaa"
+      ],
+      "agents": [
+        {
+          "id": "soap-note-assistant",
+          "name": "SOAP Note Assistant",
+          "description": "Converts clinician dictation notes and visit transcripts into standardized SOAP progress notes with ICD-10 and CPT coding suggestions."
+        },
+        {
+          "id": "claim-denial-appealer",
+          "name": "Claim Denial Appealer",
+          "description": "Analyzes insurance claim denial EOBs and drafts compelling appeal letters citing clinical justification."
+        },
+        {
+          "id": "patient-intake-triager",
+          "name": "Patient Intake Triager",
+          "description": "Screens intake questionnaires to highlight allergies, drug interactions, and chronic conditions before patient exams."
+        }
+      ],
+      "workflows": [
+        "clinical-intake-and-billing-audit"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 18,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/README.md",
+      "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+      "signature": "ed25519:CLX/Rlx/FHqwsqV10GsGjHEwIW3sdDhJIPXbccyqcSyVOojD/52078fTB3RaqipI2GtIGpfCToywMHrH/+QPDw=="
+    },
+    {
+      "id": "restaurant-pack",
+      "name": "Restaurant Operations Pack",
+      "description": "Menu engineering margin optimization, inventory waste & par level forecasting, and multi-channel guest review reputation management.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-restaurant-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [
+        "restaurant",
+        "hospitality",
+        "menu",
+        "inventory",
+        "food-cost"
+      ],
+      "agents": [
+        {
+          "id": "menu-margin-optimizer",
+          "name": "Menu Margin Optimizer",
+          "description": "Performs recipe costing and sales volume analysis to classify dishes into Stars, Plowhorses, Puzzles, and Dogs."
+        },
+        {
+          "id": "inventory-waste-tracker",
+          "name": "Inventory Waste Tracker",
+          "description": "Analyzes food prep sheets and spoilage logs to project accurate order par levels and reduce food waste."
+        },
+        {
+          "id": "guest-review-responder",
+          "name": "Guest Review Responder",
+          "description": "Monitors diner sentiment across platforms and drafts thoughtful, de-escalating review responses."
+        }
+      ],
+      "workflows": [
+        "daily-restaurant-ops-review"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 18,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/README.md",
+      "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+      "signature": "ed25519:3paaFDpYAUX3LY3ocfm/JIwWMQSy36WpQA+VC8xFmJrz2T828k5x8yzLP4zT+s5Hcx9L5rJ+fYt0Kc2tPufGAA=="
+    },
+    {
+      "id": "local-marketing-pack",
+      "name": "Local SMB Marketing Pack",
+      "description": "Local SEO and Google Business Profile optimization, multi-channel promotional campaign generation, and customer retention churn win-back.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-local-marketing-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [
+        "marketing",
+        "smb",
+        "local-seo",
+        "promotions",
+        "retention"
+      ],
+      "agents": [
+        {
+          "id": "local-seo-optimizer",
+          "name": "Local SEO Optimizer",
+          "description": "Audits Google Business Profiles and localized service page copy for local geo-search rankings."
+        },
+        {
+          "id": "promo-campaign-builder",
+          "name": "Promo Campaign Builder",
+          "description": "Creates cohesive promotional campaigns across SMS, email newsletters, and social media."
+        },
+        {
+          "id": "churn-winback-specialist",
+          "name": "Churn Win-Back Specialist",
+          "description": "Detects inactive customers from transaction histories and drafts enticing re-engagement offers."
+        }
+      ],
+      "workflows": [
+        "local-growth-and-retention-pipeline"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 19,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-local-marketing-pack/HEAD/README.md",
+      "commit": "a54a9490d34bfeb615132dd4fff8c6a94ad0e1ab",
+      "signature": "ed25519:FOJZTnJ+rLKJwB2PGfIUvX180pc2WsjETsvtJSaoe8Omy+ORvxS1idt6IZOYeao+sPMCJpidzzcwL6knKq8wBQ=="
     },
     {
       "id": "legal-pack",

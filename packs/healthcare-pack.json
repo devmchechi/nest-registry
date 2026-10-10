@@ -1,0 +1,60 @@
+{
+  "id": "healthcare-pack",
+  "name": "Healthcare & Practice Ops Pack",
+  "description": "Offline SOAP clinical notes synthesis, insurance claim denial appeals drafting, and patient intake triage for independent medical practices.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-healthcare-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "healthcare",
+    "clinical",
+    "medical",
+    "billing",
+    "hipaa"
+  ],
+  "agents": [
+    {
+      "id": "soap-note-assistant",
+      "name": "SOAP Note Assistant",
+      "description": "Converts clinician dictation notes and visit transcripts into standardized SOAP progress notes with ICD-10 and CPT coding suggestions."
+    },
+    {
+      "id": "claim-denial-appealer",
+      "name": "Claim Denial Appealer",
+      "description": "Analyzes insurance claim denial EOBs and drafts compelling appeal letters citing clinical justification."
+    },
+    {
+      "id": "patient-intake-triager",
+      "name": "Patient Intake Triager",
+      "description": "Screens intake questionnaires to highlight allergies, drug interactions, and chronic conditions before patient exams."
+    }
+  ],
+  "workflows": [
+    "clinical-intake-and-billing-audit"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "install_size_kb": 18,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.5
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/README.md",
+  "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+  "signature": "ed25519:CLX/Rlx/FHqwsqV10GsGjHEwIW3sdDhJIPXbccyqcSyVOojD/52078fTB3RaqipI2GtIGpfCToywMHrH/+QPDw=="
+}

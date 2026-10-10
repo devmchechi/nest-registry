@@ -1,0 +1,40 @@
+{
+  "id": "inventory-waste-tracker",
+  "name": "Inventory Waste Tracker",
+  "description": "Analyzes food prep sheets and spoilage logs to project accurate order par levels and reduce food waste.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-restaurant-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/inventory-waste-tracker",
+  "tags": [
+    "restaurant",
+    "inventory",
+    "waste",
+    "par-levels",
+    "kitchen"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/agents/inventory-waste-tracker/README.md",
+  "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+  "signature": "ed25519:gY5u3Gtov/xVDdDMtEmkrfplVeFEiM+6SkJXLswCJB9FGc/HLyNpxg8kFFVYb7qXviNRxFU16A+9mwGH65bODg=="
+}

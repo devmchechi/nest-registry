@@ -1,0 +1,40 @@
+{
+  "id": "patient-intake-triager",
+  "name": "Patient Intake Triager",
+  "description": "Screens intake questionnaires to highlight allergies, drug interactions, and chronic conditions before patient exams.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-healthcare-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/patient-intake-triager",
+  "tags": [
+    "healthcare",
+    "intake",
+    "triage",
+    "safety",
+    "allergies"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-healthcare-pack/HEAD/agents/patient-intake-triager/README.md",
+  "commit": "b47571a1e04976f71120a1c371381351b3c4496e",
+  "signature": "ed25519:nH5w3ACpewvewi0RbRd+9RKM0g7PbIQMW9ax6K9zNVIbiuqD2841f6SP5XN+kZZnZ0SUFqI5pAGYtgUTBffWBg=="
+}

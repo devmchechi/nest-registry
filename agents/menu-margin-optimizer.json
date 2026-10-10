@@ -1,0 +1,40 @@
+{
+  "id": "menu-margin-optimizer",
+  "name": "Menu Margin Optimizer",
+  "description": "Performs recipe costing and sales volume analysis to classify dishes into Stars, Plowhorses, Puzzles, and Dogs.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-restaurant-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/menu-margin-optimizer",
+  "tags": [
+    "restaurant",
+    "menu",
+    "food-cost",
+    "pos",
+    "pricing"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.25
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/agents/menu-margin-optimizer/README.md",
+  "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+  "signature": "ed25519:zE5dkokW6iLd331goGWJUNejCobkmpgTUm9dTGZghr2LKMKLScCbXgahKgeG52FCTNzR5CmgIko03rdwgEXdDQ=="
+}

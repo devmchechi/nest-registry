@@ -1,0 +1,40 @@
+{
+  "id": "guest-review-responder",
+  "name": "Guest Review Responder",
+  "description": "Monitors diner sentiment across platforms and drafts thoughtful, de-escalating review responses.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-restaurant-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/guest-review-responder",
+  "tags": [
+    "restaurant",
+    "reviews",
+    "reputation",
+    "hospitality",
+    "yelp"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.15
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-restaurant-pack/HEAD/agents/guest-review-responder/README.md",
+  "commit": "c4a44693cea3e319369a1007733f995618adaf42",
+  "signature": "ed25519:FAyRID/PLI+A2r6ARlVw4eSbGUL7JhHtCZS2CxxSiiYs6lnaaQLBrkao+c5ijnxDcV2TZvqcM+FLaJGaK7foCw=="
+}
