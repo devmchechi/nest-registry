@@ -1,0 +1,39 @@
+{
+  "id": "agreement-abstractor",
+  "name": "Agreement Abstractor",
+  "description": "Extracts renewal deadlines, payment milestones, SLA commitments, and notice requirements from agreements into structured summary tables.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-legal-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/agreement-abstractor",
+  "tags": [
+    "legal",
+    "milestones",
+    "deadlines",
+    "sla"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.15
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/agents/agreement-abstractor/README.md",
+  "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+  "signature": "ed25519:ZSUx2gcWLA3AgVrT8+DgS65Mo4zIa3CVHtk3L/xoxU7bfcDCojWJfxqJO5Vlg5n6M50Cqb1g1RaF4MBgB8tkAg=="
+}

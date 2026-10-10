@@ -258,6 +258,345 @@
       "signature": "ed25519:u7GUS8rNy+8Y0Cmx9komatZMdxJC6aMcT9eUiCjKuymddojcJn484LY5tNy0+PyzzOg7jMlF6GhOA+ZPMAYjCw=="
     },
     {
+      "id": "contract-redliner",
+      "name": "Contract Redliner",
+      "description": "Analyzes commercial contracts, NDAs, and MSAs against corporate playbooks to identify liability traps, IP assignment risks, and termination clauses.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-legal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/contract-redliner",
+      "tags": [
+        "legal",
+        "contracts",
+        "redline",
+        "agreements"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.25
+      },
+      "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+      "signature": "ed25519:7bdqhmwn45nJa/Qq3x32bHs3aB+P3bD4LH/kiZQRyg9zaBVXPbAE0gxdJ1cEMF2u5KcdfGu/TPv2QBqEdg6PDA=="
+    },
+    {
+      "id": "agreement-abstractor",
+      "name": "Agreement Abstractor",
+      "description": "Extracts renewal deadlines, payment milestones, SLA commitments, and notice requirements from agreements into structured summary tables.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-legal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/agreement-abstractor",
+      "tags": [
+        "legal",
+        "milestones",
+        "deadlines",
+        "sla"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.15
+      },
+      "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+      "signature": "ed25519:ZSUx2gcWLA3AgVrT8+DgS65Mo4zIa3CVHtk3L/xoxU7bfcDCojWJfxqJO5Vlg5n6M50Cqb1g1RaF4MBgB8tkAg=="
+    },
+    {
+      "id": "compliance-checker",
+      "name": "Compliance & Privacy Checker",
+      "description": "Audits vendor agreements and data processing addendums (DPAs) against GDPR, CCPA, and SOC2 requirements to verify standard privacy clauses.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-legal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/compliance-checker",
+      "tags": [
+        "legal",
+        "privacy",
+        "gdpr",
+        "ccpa",
+        "security"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.25
+      },
+      "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+      "signature": "ed25519:kcjBpfFun69n0agJFTcf/3w3Jeev2xCALLM7uLHSjRS/z3BrkZ2ugKxrHc4feUXrLUuTyEVcfsgidrL3p6FRAQ=="
+    },
+    {
+      "id": "lead-researcher",
+      "name": "Lead & Account Researcher",
+      "description": "Researches target business accounts, key executive decision-makers, tech stack footprints, and recent press to draft 1-page pre-call briefings.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-sales-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/lead-researcher",
+      "tags": [
+        "sales",
+        "research",
+        "leads",
+        "intelligence",
+        "b2b"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.2
+      },
+      "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+      "signature": "ed25519:/jGRwdCnXX99eVDAbH2foCUvFceYlnfrF+aSWyowRjxth7H3qusClHdST/ezhnLiK1fPCwl84lq6gHfuD3ZkAA=="
+    },
+    {
+      "id": "rfp-responder",
+      "name": "RFP & Proposal Responder",
+      "description": "Matches customer RFP questionnaire requirements against past company proposal archives and security documentation to draft accurate responses.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-sales-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/rfp-responder",
+      "tags": [
+        "sales",
+        "rfp",
+        "proposals",
+        "bids",
+        "security"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.3
+      },
+      "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+      "signature": "ed25519:4eLhc/44rde+FSRLXtlt4arXjsh1oqWa2bCd0dXRrI5GTlLMNwYHHSb0yAyvWkWCR3HNOT9KYB47ROdYGJxJBg=="
+    },
+    {
+      "id": "outreach-drafter",
+      "name": "Outreach Personalization Drafter",
+      "description": "Ingests prospect lists and company profiles to compose personalized, value-focused cold email sequences without generic AI buzzwords.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-sales-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/outreach-drafter",
+      "tags": [
+        "sales",
+        "email",
+        "outreach",
+        "copywriting"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.01,
+        "max": 0.15
+      },
+      "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+      "signature": "ed25519:8lQUpX6bNnKR7UfPGi9Nd9XriB0VCFdEbkQx+bzRbJFKq67yd7B1HNU4TxYG+apw6FLwg0/4puCUneSNr74yDw=="
+    },
+    {
+      "id": "log-incident-analyzer",
+      "name": "Log & Incident Analyzer",
+      "description": "Parses server error logs, Docker traces, and system dumps to reconstruct timeline sequences, pinpoint root causes, and draft postmortems.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-devops-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/log-incident-analyzer",
+      "tags": [
+        "devops",
+        "sre",
+        "logs",
+        "incidents",
+        "debugging"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.3
+      },
+      "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+      "signature": "ed25519:q9sSD+6TkhWu/vT34ceO+ZYCZeMEPD5ZADqoybXIhUBknBZhAawu9IyA4jSrr08c0NPJegajPxnCz/iWR05dAw=="
+    },
+    {
+      "id": "cve-auditor",
+      "name": "CVE & Dependency Auditor",
+      "description": "Audits project package lockfiles and container manifests against public vulnerability advisories, generating prioritized upgrade plans.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-devops-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/cve-auditor",
+      "tags": [
+        "devops",
+        "security",
+        "cve",
+        "dependencies",
+        "vulnerabilities"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.25
+      },
+      "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+      "signature": "ed25519:EVqTS3g/e6O6eZEoCE0h7e8jd9UzDKk8Tv6On4m4YGBogDPi3ohwYFufadj3e7uDG4fVcmdsu6CcDrXlWPRIDw=="
+    },
+    {
+      "id": "api-spec-builder",
+      "name": "API Spec & Mock Builder",
+      "description": "Inspects backend route definitions and database schemas to generate valid OpenAPI 3.1 specifications, TypeScript interfaces, and mock fixtures.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-devops-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "path": "agents/api-spec-builder",
+      "tags": [
+        "devops",
+        "api",
+        "openapi",
+        "typescript",
+        "architecture"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "estimated_cost_usd": {
+        "min": 0.02,
+        "max": 0.2
+      },
+      "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+      "signature": "ed25519:4QYhjfddpmYD41EdHtWtHHvGPm38AOf3GMZVek2pvnskEn0/eTHxSbfpbxCZyZ7M7j68tUVMcoAngfM2aUInBQ=="
+    },
+    {
       "id": "data-fetcher",
       "name": "Data Fetcher",
       "description": "Loads CSV and JSON data from your working folder or allowlisted URLs, validates and cleans it, and saves tidy datasets plus a data-quality profile for analysis.",
@@ -963,6 +1302,188 @@
       "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-trading-pack/HEAD/README.md",
       "commit": "54fb4ff83ae29f262fcae5f04062f66d29c9e0c6",
       "signature": "ed25519:jfW6TcJXHUpQ7bL7yehQzQAMXZStsFThJqDxFTLfxV8TMFkFqQD03gHfTMHM8tA/GBK/nwRS/AcxDsmO1gjuAA=="
+    },
+    {
+      "id": "legal-pack",
+      "name": "Legal & Contracts Pack",
+      "description": "Commercial contract redlining, agreement milestone abstraction, and vendor privacy/compliance auditing for business teams.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-legal-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [
+        "legal",
+        "contracts",
+        "compliance",
+        "procurement",
+        "enterprise"
+      ],
+      "agents": [
+        {
+          "id": "contract-redliner",
+          "name": "Contract Redliner",
+          "description": "Analyzes commercial contracts, NDAs, and MSAs against corporate playbooks to identify liability traps, IP assignment risks, and termination clauses."
+        },
+        {
+          "id": "agreement-abstractor",
+          "name": "Agreement Abstractor",
+          "description": "Extracts renewal deadlines, payment milestones, SLA commitments, and notice requirements from agreements into structured summary tables."
+        },
+        {
+          "id": "compliance-checker",
+          "name": "Compliance & Privacy Checker",
+          "description": "Audits vendor agreements and data processing addendums (DPAs) against GDPR, CCPA, and SOC2 requirements to verify standard privacy clauses."
+        }
+      ],
+      "workflows": [
+        "vendor-contract-review"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 19,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/README.md",
+      "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+      "signature": "ed25519:Dn1MzTSZch7lI+OJY6zXanC2aqjyAVaAWWqAuFwiVdJPJLh8jflfVEwK5HqtJKxLONIz0CMoZNTS5SBU4k2LDA=="
+    },
+    {
+      "id": "sales-pack",
+      "name": "Sales & RFP Intelligence Pack",
+      "description": "Pre-meeting executive account research, RFP proposal response drafting, and personalized outbound campaign generation.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-sales-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [
+        "sales",
+        "gtm",
+        "rfp",
+        "leads",
+        "outreach",
+        "pipeline"
+      ],
+      "agents": [
+        {
+          "id": "lead-researcher",
+          "name": "Lead & Account Researcher",
+          "description": "Researches target business accounts, key executive decision-makers, tech stack footprints, and recent press to draft 1-page pre-call briefings."
+        },
+        {
+          "id": "rfp-responder",
+          "name": "RFP & Proposal Responder",
+          "description": "Matches customer RFP questionnaire requirements against past company proposal archives and security documentation to draft accurate responses."
+        },
+        {
+          "id": "outreach-drafter",
+          "name": "Outreach Personalization Drafter",
+          "description": "Ingests prospect lists and company profiles to compose personalized, value-focused cold email sequences without generic AI buzzwords."
+        }
+      ],
+      "workflows": [
+        "deal-preparation-pipeline"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 17,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/README.md",
+      "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+      "signature": "ed25519:twZ+N8YBnYj9RB2FJfbVS8YVDn6yp6RW+FaqSRsg9/aAEwZAs9e27py11LZzWHI7lY167uxeT2WrwD5TDHAPCw=="
+    },
+    {
+      "id": "devops-pack",
+      "name": "DevOps & Reliability Pack",
+      "description": "Autonomous server log parsing, root cause incident postmortems, dependency CVE vulnerability audits, and OpenAPI spec generation.",
+      "publisher": "devmchechi",
+      "repo": "github.com/devmchechi/nest-devops-pack",
+      "latest_version": "1.0.0",
+      "ref": "v1.0.0",
+      "min_nest_version": "0.1.0",
+      "tags": [
+        "devops",
+        "sre",
+        "security",
+        "cve",
+        "api",
+        "reliability"
+      ],
+      "agents": [
+        {
+          "id": "log-incident-analyzer",
+          "name": "Log & Incident Analyzer",
+          "description": "Parses server error logs, Docker traces, and system dumps to reconstruct timeline sequences, pinpoint root causes, and draft postmortems."
+        },
+        {
+          "id": "cve-auditor",
+          "name": "CVE & Dependency Auditor",
+          "description": "Audits project package lockfiles and container manifests against public vulnerability advisories, generating prioritized upgrade plans."
+        },
+        {
+          "id": "api-spec-builder",
+          "name": "API Spec & Mock Builder",
+          "description": "Inspects backend route definitions and database schemas to generate valid OpenAPI 3.1 specifications, TypeScript interfaces, and mock fixtures."
+        }
+      ],
+      "workflows": [
+        "incident-and-release-audit"
+      ],
+      "capabilities": {
+        "tools": [
+          "shell",
+          "read_file",
+          "write_file",
+          "list_dir"
+        ],
+        "network": [],
+        "pilots": [],
+        "requires_approval": [
+          "shell",
+          "write_file"
+        ]
+      },
+      "install_size_kb": 17,
+      "estimated_cost_usd": {
+        "min": 0.05,
+        "max": 0.5
+      },
+      "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/icon.svg",
+      "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/README.md",
+      "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+      "signature": "ed25519:bjCBWHU5rzowDCX/ILq7uD/Nx49utHWpV4xu+e8GvTCGmk7jqlMjmpefYH2Zup1ZZVG5vl8hsBt4jn9qu2kzCQ=="
     },
     {
       "id": "analytics-pack",

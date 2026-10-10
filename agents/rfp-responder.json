@@ -1,0 +1,40 @@
+{
+  "id": "rfp-responder",
+  "name": "RFP & Proposal Responder",
+  "description": "Matches customer RFP questionnaire requirements against past company proposal archives and security documentation to draft accurate responses.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-sales-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/rfp-responder",
+  "tags": [
+    "sales",
+    "rfp",
+    "proposals",
+    "bids",
+    "security"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.3
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/agents/rfp-responder/README.md",
+  "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+  "signature": "ed25519:4eLhc/44rde+FSRLXtlt4arXjsh1oqWa2bCd0dXRrI5GTlLMNwYHHSb0yAyvWkWCR3HNOT9KYB47ROdYGJxJBg=="
+}

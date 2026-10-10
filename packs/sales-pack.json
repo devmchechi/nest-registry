@@ -1,0 +1,61 @@
+{
+  "id": "sales-pack",
+  "name": "Sales & RFP Intelligence Pack",
+  "description": "Pre-meeting executive account research, RFP proposal response drafting, and personalized outbound campaign generation.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-sales-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "sales",
+    "gtm",
+    "rfp",
+    "leads",
+    "outreach",
+    "pipeline"
+  ],
+  "agents": [
+    {
+      "id": "lead-researcher",
+      "name": "Lead & Account Researcher",
+      "description": "Researches target business accounts, key executive decision-makers, tech stack footprints, and recent press to draft 1-page pre-call briefings."
+    },
+    {
+      "id": "rfp-responder",
+      "name": "RFP & Proposal Responder",
+      "description": "Matches customer RFP questionnaire requirements against past company proposal archives and security documentation to draft accurate responses."
+    },
+    {
+      "id": "outreach-drafter",
+      "name": "Outreach Personalization Drafter",
+      "description": "Ingests prospect lists and company profiles to compose personalized, value-focused cold email sequences without generic AI buzzwords."
+    }
+  ],
+  "workflows": [
+    "deal-preparation-pipeline"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "install_size_kb": 17,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.5
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/README.md",
+  "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+  "signature": "ed25519:twZ+N8YBnYj9RB2FJfbVS8YVDn6yp6RW+FaqSRsg9/aAEwZAs9e27py11LZzWHI7lY167uxeT2WrwD5TDHAPCw=="
+}

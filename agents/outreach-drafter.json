@@ -1,0 +1,39 @@
+{
+  "id": "outreach-drafter",
+  "name": "Outreach Personalization Drafter",
+  "description": "Ingests prospect lists and company profiles to compose personalized, value-focused cold email sequences without generic AI buzzwords.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-sales-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/outreach-drafter",
+  "tags": [
+    "sales",
+    "email",
+    "outreach",
+    "copywriting"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.15
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/agents/outreach-drafter/README.md",
+  "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+  "signature": "ed25519:8lQUpX6bNnKR7UfPGi9Nd9XriB0VCFdEbkQx+bzRbJFKq67yd7B1HNU4TxYG+apw6FLwg0/4puCUneSNr74yDw=="
+}

@@ -1,0 +1,60 @@
+{
+  "id": "legal-pack",
+  "name": "Legal & Contracts Pack",
+  "description": "Commercial contract redlining, agreement milestone abstraction, and vendor privacy/compliance auditing for business teams.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-legal-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "legal",
+    "contracts",
+    "compliance",
+    "procurement",
+    "enterprise"
+  ],
+  "agents": [
+    {
+      "id": "contract-redliner",
+      "name": "Contract Redliner",
+      "description": "Analyzes commercial contracts, NDAs, and MSAs against corporate playbooks to identify liability traps, IP assignment risks, and termination clauses."
+    },
+    {
+      "id": "agreement-abstractor",
+      "name": "Agreement Abstractor",
+      "description": "Extracts renewal deadlines, payment milestones, SLA commitments, and notice requirements from agreements into structured summary tables."
+    },
+    {
+      "id": "compliance-checker",
+      "name": "Compliance & Privacy Checker",
+      "description": "Audits vendor agreements and data processing addendums (DPAs) against GDPR, CCPA, and SOC2 requirements to verify standard privacy clauses."
+    }
+  ],
+  "workflows": [
+    "vendor-contract-review"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "install_size_kb": 19,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.5
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/README.md",
+  "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+  "signature": "ed25519:Dn1MzTSZch7lI+OJY6zXanC2aqjyAVaAWWqAuFwiVdJPJLh8jflfVEwK5HqtJKxLONIz0CMoZNTS5SBU4k2LDA=="
+}

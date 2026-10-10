@@ -1,0 +1,61 @@
+{
+  "id": "devops-pack",
+  "name": "DevOps & Reliability Pack",
+  "description": "Autonomous server log parsing, root cause incident postmortems, dependency CVE vulnerability audits, and OpenAPI spec generation.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-devops-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "devops",
+    "sre",
+    "security",
+    "cve",
+    "api",
+    "reliability"
+  ],
+  "agents": [
+    {
+      "id": "log-incident-analyzer",
+      "name": "Log & Incident Analyzer",
+      "description": "Parses server error logs, Docker traces, and system dumps to reconstruct timeline sequences, pinpoint root causes, and draft postmortems."
+    },
+    {
+      "id": "cve-auditor",
+      "name": "CVE & Dependency Auditor",
+      "description": "Audits project package lockfiles and container manifests against public vulnerability advisories, generating prioritized upgrade plans."
+    },
+    {
+      "id": "api-spec-builder",
+      "name": "API Spec & Mock Builder",
+      "description": "Inspects backend route definitions and database schemas to generate valid OpenAPI 3.1 specifications, TypeScript interfaces, and mock fixtures."
+    }
+  ],
+  "workflows": [
+    "incident-and-release-audit"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "install_size_kb": 17,
+  "estimated_cost_usd": {
+    "min": 0.05,
+    "max": 0.5
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/README.md",
+  "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+  "signature": "ed25519:bjCBWHU5rzowDCX/ILq7uD/Nx49utHWpV4xu+e8GvTCGmk7jqlMjmpefYH2Zup1ZZVG5vl8hsBt4jn9qu2kzCQ=="
+}

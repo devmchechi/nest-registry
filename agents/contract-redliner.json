@@ -1,0 +1,39 @@
+{
+  "id": "contract-redliner",
+  "name": "Contract Redliner",
+  "description": "Analyzes commercial contracts, NDAs, and MSAs against corporate playbooks to identify liability traps, IP assignment risks, and termination clauses.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-legal-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/contract-redliner",
+  "tags": [
+    "legal",
+    "contracts",
+    "redline",
+    "agreements"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.25
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/agents/contract-redliner/README.md",
+  "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+  "signature": "ed25519:7bdqhmwn45nJa/Qq3x32bHs3aB+P3bD4LH/kiZQRyg9zaBVXPbAE0gxdJ1cEMF2u5KcdfGu/TPv2QBqEdg6PDA=="
+}

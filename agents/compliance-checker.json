@@ -1,0 +1,40 @@
+{
+  "id": "compliance-checker",
+  "name": "Compliance & Privacy Checker",
+  "description": "Audits vendor agreements and data processing addendums (DPAs) against GDPR, CCPA, and SOC2 requirements to verify standard privacy clauses.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-legal-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/compliance-checker",
+  "tags": [
+    "legal",
+    "privacy",
+    "gdpr",
+    "ccpa",
+    "security"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.25
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-legal-pack/HEAD/agents/compliance-checker/README.md",
+  "commit": "62d54298ed6e98e4122acfe1c2efde0581713be1",
+  "signature": "ed25519:kcjBpfFun69n0agJFTcf/3w3Jeev2xCALLM7uLHSjRS/z3BrkZ2ugKxrHc4feUXrLUuTyEVcfsgidrL3p6FRAQ=="
+}

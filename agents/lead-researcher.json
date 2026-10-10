@@ -1,0 +1,40 @@
+{
+  "id": "lead-researcher",
+  "name": "Lead & Account Researcher",
+  "description": "Researches target business accounts, key executive decision-makers, tech stack footprints, and recent press to draft 1-page pre-call briefings.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-sales-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/lead-researcher",
+  "tags": [
+    "sales",
+    "research",
+    "leads",
+    "intelligence",
+    "b2b"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-sales-pack/HEAD/agents/lead-researcher/README.md",
+  "commit": "8ccc1d5a15750f017c2e5c316105dfc17e11baca",
+  "signature": "ed25519:/jGRwdCnXX99eVDAbH2foCUvFceYlnfrF+aSWyowRjxth7H3qusClHdST/ezhnLiK1fPCwl84lq6gHfuD3ZkAA=="
+}

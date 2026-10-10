@@ -1,0 +1,40 @@
+{
+  "id": "log-incident-analyzer",
+  "name": "Log & Incident Analyzer",
+  "description": "Parses server error logs, Docker traces, and system dumps to reconstruct timeline sequences, pinpoint root causes, and draft postmortems.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-devops-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/log-incident-analyzer",
+  "tags": [
+    "devops",
+    "sre",
+    "logs",
+    "incidents",
+    "debugging"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.3
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/agents/log-incident-analyzer/README.md",
+  "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+  "signature": "ed25519:q9sSD+6TkhWu/vT34ceO+ZYCZeMEPD5ZADqoybXIhUBknBZhAawu9IyA4jSrr08c0NPJegajPxnCz/iWR05dAw=="
+}

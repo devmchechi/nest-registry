@@ -1,0 +1,40 @@
+{
+  "id": "api-spec-builder",
+  "name": "API Spec & Mock Builder",
+  "description": "Inspects backend route definitions and database schemas to generate valid OpenAPI 3.1 specifications, TypeScript interfaces, and mock fixtures.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nest-devops-pack",
+  "latest_version": "1.0.0",
+  "ref": "v1.0.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/api-spec-builder",
+  "tags": [
+    "devops",
+    "api",
+    "openapi",
+    "typescript",
+    "architecture"
+  ],
+  "capabilities": {
+    "tools": [
+      "shell",
+      "read_file",
+      "write_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "shell",
+      "write_file"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.2
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nest-devops-pack/HEAD/agents/api-spec-builder/README.md",
+  "commit": "068bbfb8230db69ad9661ed927beb753e6aa4ac8",
+  "signature": "ed25519:4QYhjfddpmYD41EdHtWtHHvGPm38AOf3GMZVek2pvnskEn0/eTHxSbfpbxCZyZ7M7j68tUVMcoAngfM2aUInBQ=="
+}

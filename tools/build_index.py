@@ -45,6 +45,9 @@ RAW = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/{path}"
 PACK_REPOS = {
     "finance-pack": "nest-finance-pack",
     "trading-pack": "nest-trading-pack",
+    "legal-pack": "nest-legal-pack",
+    "sales-pack": "nest-sales-pack",
+    "devops-pack": "nest-devops-pack",
     "research-pack": "nest-research-pack",
     "engineering-pack": "nest-engineering-pack",
     "content-pack": "nest-content-pack",
@@ -70,6 +73,15 @@ SEED = {
         "quant-backtester": (["trading", "quant", "backtesting", "python", "algorithmic"], 0.02, 0.30),
         "trade-journal-auditor": (["trading", "journal", "risk", "psychology", "discipline"], 0.01, 0.15),
         "portfolio-rebalancer": (["trading", "portfolio", "rebalancing", "allocation", "risk"], 0.01, 0.15),
+        "contract-redliner": (["legal", "contracts", "redline", "agreements"], 0.02, 0.25),
+        "agreement-abstractor": (["legal", "milestones", "deadlines", "sla"], 0.01, 0.15),
+        "compliance-checker": (["legal", "privacy", "gdpr", "ccpa", "security"], 0.02, 0.25),
+        "lead-researcher": (["sales", "research", "leads", "intelligence", "b2b"], 0.01, 0.20),
+        "rfp-responder": (["sales", "rfp", "proposals", "bids", "security"], 0.02, 0.30),
+        "outreach-drafter": (["sales", "email", "outreach", "copywriting"], 0.01, 0.15),
+        "log-incident-analyzer": (["devops", "sre", "logs", "incidents", "debugging"], 0.02, 0.30),
+        "cve-auditor": (["devops", "security", "cve", "dependencies", "vulnerabilities"], 0.02, 0.25),
+        "api-spec-builder": (["devops", "api", "openapi", "typescript", "architecture"], 0.02, 0.20),
         "arxiv-researcher": (["research", "papers", "arxiv", "search"], 0.01, 0.15),
         "paper-summarizer": (["research", "papers", "summaries", "pdf"], 0.02, 0.30),
         "citation-formatter": (["research", "citations", "bibtex", "writing"], 0.01, 0.08),
@@ -90,6 +102,9 @@ SEED = {
     "packs": {
         "finance-pack": (["finance", "accounting", "invoices", "cashflow", "smb", "corporate"], 0.05, 0.50),
         "trading-pack": (["trading", "markets", "stocks", "quant", "sentiment", "portfolio"], 0.05, 0.50),
+        "legal-pack": (["legal", "contracts", "compliance", "procurement", "enterprise"], 0.05, 0.50),
+        "sales-pack": (["sales", "gtm", "rfp", "leads", "outreach", "pipeline"], 0.05, 0.50),
+        "devops-pack": (["devops", "sre", "security", "cve", "api", "reliability"], 0.05, 0.50),
         "research-pack": (["research", "papers", "citations", "academic"], 0.05, 0.60),
         "engineering-pack": (["engineering", "code-review", "testing", "documentation"], 0.08, 0.90),
         "content-pack": (["content", "writing", "seo", "newsletter"], 0.06, 0.50),
@@ -456,9 +471,15 @@ def main() -> int:
     check = "--check" in sys.argv[1:]
     pack_dirs = sorted(p for p in PACKS_ROOT.iterdir() if (p / ".nest" / "manifest.yaml").is_file())
     packs = [p for p in (load_pack(d) for d in pack_dirs) if p]
-    # Prioritize Finance Pack at #1 and Trading & Risk Pack at #2
-    priority = {"finance-pack": 0, "trading-pack": 1}
-    packs.sort(key=lambda p: (priority.get(p["id"], 2), p["id"]))
+    # Prioritize new high-impact packs at top
+    priority = {
+        "finance-pack": 0,
+        "trading-pack": 1,
+        "legal-pack": 2,
+        "sales-pack": 3,
+        "devops-pack": 4,
+    }
+    packs.sort(key=lambda p: (priority.get(p["id"], 5), p["id"]))
 
     # IDs must be unique across every pack (a user may install them all)
     seen: dict[str, str] = {}
