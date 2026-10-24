@@ -28,5 +28,7 @@
     "max": 0.4
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
-  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/pr-reviewer/README.md"
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/pr-reviewer/README.md",
+  "commit": "b7a1ec6db83c3ea7cc7f56267b0ba106528cc508",
+  "signature": "ed25519:0bG1VkqoekGpUogggj0UCrY6uD5xArxaKwpfQyYqnQhX9tUAw1Lk87mUF9CtYv/DFOvZsLresNnDOisrUmoGDA=="
 }

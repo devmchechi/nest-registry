@@ -29,7 +29,9 @@
       "estimated_cost_usd": {
         "min": 0.01,
         "max": 0.1
-      }
+      },
+      "commit": "b7a1ec6db83c3ea7cc7f56267b0ba106528cc508",
+      "signature": "ed25519:+3Awb13iln30bNfmDWSRzBXGFVClRV8vqD6vJ/IrBkYsb4QAXDsBKQntNye0PJOLmnaNY5wCzP0r2X0X5lyeBQ=="
     },
     {
       "id": "pr-reviewer",
@@ -59,7 +61,9 @@
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.4
-      }
+      },
+      "commit": "b7a1ec6db83c3ea7cc7f56267b0ba106528cc508",
+      "signature": "ed25519:0bG1VkqoekGpUogggj0UCrY6uD5xArxaKwpfQyYqnQhX9tUAw1Lk87mUF9CtYv/DFOvZsLresNnDOisrUmoGDA=="
     }
   ],
   "packs": [
