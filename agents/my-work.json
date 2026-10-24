@@ -4,8 +4,8 @@
   "description": "Your representative on your team. Finds who is responsible for what, asks people and assigns them work with your approval, tracks it, and answers questions about your work for others.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.2.0",
-  "ref": "v0.2.0",
+  "latest_version": "0.3.0",
+  "ref": "v0.3.0",
   "min_nest_version": "0.1.0",
   "path": "agents/my-work",
   "tags": [
@@ -34,6 +34,6 @@
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/my-work/README.md",
-  "commit": "a0942919ff8b53b91cee1e7ef6cb16ded0b1f37b",
-  "signature": "ed25519:iQsFo+UDqvqt+dvhSyYRpyOG7A4HmBy/ajx/hLEE901ZIBzIQQYzP7HG/Yv9NuhKsvUVstcuf20w2xVt4+beAA=="
+  "commit": "1bf14b38f4a65d35d3bfd7eabecf45a823bbe177",
+  "signature": "ed25519:djZFF8OTSXBsr4cMpQvyNdQLh2KikvAcvdc+1/jxohc2B4Qh3ETNrMBB3hK7ZHqyftBKZeYxuvouZO0KurgFAw=="
 }
