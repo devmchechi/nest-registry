@@ -1,0 +1,32 @@
+{
+  "id": "my-work",
+  "name": "My Work",
+  "description": "Answers questions about your role, what you own, who to ask and what's due, from your own notes and instructions, and says where every answer came from.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nandin-dev-pack",
+  "latest_version": "0.1.0",
+  "ref": "v0.1.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/my-work",
+  "tags": [
+    "official",
+    "personal",
+    "productivity",
+    "notes"
+  ],
+  "capabilities": {
+    "tools": [
+      "read_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": []
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/my-work/README.md"
+}

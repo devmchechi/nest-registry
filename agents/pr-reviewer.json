@@ -1,0 +1,32 @@
+{
+  "id": "pr-reviewer",
+  "name": "PR Reviewer",
+  "description": "Reviews a GitHub pull request, private repositories included, against your own rules and the repo's guidelines, then posts the review on the PR once you approve the exact comments.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nandin-dev-pack",
+  "latest_version": "0.1.0",
+  "ref": "v0.1.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/pr-reviewer",
+  "tags": [
+    "official",
+    "engineering",
+    "code-review",
+    "github"
+  ],
+  "capabilities": {
+    "tools": [
+      "read_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": []
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.4
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/pr-reviewer/README.md"
+}

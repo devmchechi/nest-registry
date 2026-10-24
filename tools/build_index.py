@@ -43,6 +43,7 @@ RAW = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/{path}"
 
 # pack folder -> GitHub repo name
 PACK_REPOS = {
+    "dev-pack": "nandin-dev-pack",
     "finance-pack": "nest-finance-pack",
     "trading-pack": "nest-trading-pack",
     "healthcare-pack": "nest-healthcare-pack",
@@ -68,6 +69,8 @@ STEP_OUTPUT_RE = re.compile(r"^([A-Za-z0-9_.-]+?)\.output$")
 
 SEED = {
     "agents": {
+        "my-work": (["official", "personal", "productivity", "notes"], 0.01, 0.10),
+        "pr-reviewer": (["official", "engineering", "code-review", "github"], 0.02, 0.40),
         "invoice-reconciler": (["finance", "invoices", "reconciliation", "accounting"], 0.01, 0.15),
         "cashflow-forecaster": (["finance", "cashflow", "runway", "treasury"], 0.02, 0.20),
         "financial-auditor": (["finance", "audit", "statements", "sec", "ratios"], 0.02, 0.25),
@@ -112,6 +115,7 @@ SEED = {
         "meeting-notes": (["personal", "meetings", "notes", "productivity", "offline"], 0.01, 0.12),
     },
     "packs": {
+        "dev-pack": (["official", "engineering", "productivity", "github"], 0.02, 0.40),
         "finance-pack": (["finance", "accounting", "invoices", "cashflow", "smb", "corporate"], 0.05, 0.50),
         "trading-pack": (["trading", "markets", "stocks", "quant", "sentiment", "portfolio"], 0.05, 0.50),
         "healthcare-pack": (["healthcare", "clinical", "medical", "billing", "hipaa"], 0.05, 0.50),
@@ -231,7 +235,7 @@ def load_agent(pack: str, folder: Path) -> dict | None:
     for banned in ("model", "aws", "pilots"):
         if banned in fm:
             err(f"{where}: '{banned}' must not be set")
-    unknown = set(fm) - {"name", "description", "allowed-tools", "requires_approval", "network"}
+    unknown = set(fm) - {"name", "description", "allowed-tools", "requires_approval", "network", "connectors", "tags"}
     if unknown:
         err(f"{where}: unexpected frontmatter keys {sorted(unknown)}")
 
@@ -336,7 +340,7 @@ def folder_size_kb(folder: Path) -> int:
 
 
 def load_pack(folder: Path) -> dict | None:
-    pack_id = folder.name.removeprefix("nest-")
+    pack_id = folder.name.removeprefix("nest-").removeprefix("nandin-")
     manifest_path = folder / ".nest" / "manifest.yaml"
     if not manifest_path.is_file():
         err(f"{pack_id}: .nest/manifest.yaml missing")

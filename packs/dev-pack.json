@@ -1,0 +1,47 @@
+{
+  "id": "dev-pack",
+  "name": "Nandin Dev Pack",
+  "description": "Official agents from Nandin. My Work answers questions about your job from your own notes; PR Reviewer reviews pull requests against your rules; AWS Ops Analyst follows.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nandin-dev-pack",
+  "latest_version": "0.1.0",
+  "ref": "v0.1.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "official",
+    "engineering",
+    "productivity",
+    "github"
+  ],
+  "agents": [
+    {
+      "id": "my-work",
+      "name": "My Work",
+      "description": "Answers questions about your role, what you own, who to ask and what's due, from your own notes and instructions, and says where every answer came from."
+    },
+    {
+      "id": "pr-reviewer",
+      "name": "PR Reviewer",
+      "description": "Reviews a GitHub pull request, private repositories included, against your own rules and the repo's guidelines, then posts the review on the PR once you approve the exact comments."
+    }
+  ],
+  "workflows": [],
+  "capabilities": {
+    "tools": [
+      "read_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": []
+  },
+  "install_size_kb": 20,
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.4
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/README.md",
+  "commit": "b7a1ec6db83c3ea7cc7f56267b0ba106528cc508",
+  "signature": "ed25519:oNLaHPdWZu/fUPh0vZywdjlDCGrl4ysjDNfISg+KKajn6W61RMZnNOohDxvl/w5Hv2Am0ieVL3gXt1G/Jk94Ag=="
+}
