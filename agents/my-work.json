@@ -1,11 +1,11 @@
 {
   "id": "my-work",
   "name": "My Work",
-  "description": "Answers questions about your role, what you own, who to ask and what's due, from your own notes and instructions, and says where every answer came from.",
+  "description": "Your representative on your team. Finds who is responsible for what, asks people and assigns them work with your approval, tracks it, and answers questions about your work for others.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.1.0",
-  "ref": "v0.1.0",
+  "latest_version": "0.2.0",
+  "ref": "v0.2.0",
   "min_nest_version": "0.1.0",
   "path": "agents/my-work",
   "tags": [
@@ -17,11 +17,16 @@
   "capabilities": {
     "tools": [
       "read_file",
-      "list_dir"
+      "list_dir",
+      "find_people",
+      "my_requests",
+      "delegate_to_agent"
     ],
     "network": [],
     "pilots": [],
-    "requires_approval": []
+    "requires_approval": [
+      "delegate_to_agent"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,
@@ -29,6 +34,6 @@
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/my-work/README.md",
-  "commit": "b7a1ec6db83c3ea7cc7f56267b0ba106528cc508",
-  "signature": "ed25519:+3Awb13iln30bNfmDWSRzBXGFVClRV8vqD6vJ/IrBkYsb4QAXDsBKQntNye0PJOLmnaNY5wCzP0r2X0X5lyeBQ=="
+  "commit": "a0942919ff8b53b91cee1e7ef6cb16ded0b1f37b",
+  "signature": "ed25519:iQsFo+UDqvqt+dvhSyYRpyOG7A4HmBy/ajx/hLEE901ZIBzIQQYzP7HG/Yv9NuhKsvUVstcuf20w2xVt4+beAA=="
 }

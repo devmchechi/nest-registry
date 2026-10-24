@@ -1,11 +1,11 @@
 {
   "id": "dev-pack",
   "name": "Nandin Dev Pack",
-  "description": "Official agents from Nandin. My Work answers questions about your job from your own notes; PR Reviewer reviews pull requests against your rules; AWS Ops Analyst follows.",
+  "description": "Official agents from Nandin. My Work is your representative on your team; PR Reviewer reviews pull requests against your rules. AWS Ops Analyst follows.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.1.0",
-  "ref": "v0.1.0",
+  "latest_version": "0.2.0",
+  "ref": "v0.2.0",
   "min_nest_version": "0.1.0",
   "tags": [
     "official",
@@ -17,7 +17,7 @@
     {
       "id": "my-work",
       "name": "My Work",
-      "description": "Answers questions about your role, what you own, who to ask and what's due, from your own notes and instructions, and says where every answer came from."
+      "description": "Your representative on your team. Finds who is responsible for what, asks people and assigns them work with your approval, tracks it, and answers questions about your work for others."
     },
     {
       "id": "pr-reviewer",
@@ -29,19 +29,24 @@
   "capabilities": {
     "tools": [
       "read_file",
-      "list_dir"
+      "list_dir",
+      "find_people",
+      "my_requests",
+      "delegate_to_agent"
     ],
     "network": [],
     "pilots": [],
-    "requires_approval": []
+    "requires_approval": [
+      "delegate_to_agent"
+    ]
   },
-  "install_size_kb": 20,
+  "install_size_kb": 24,
   "estimated_cost_usd": {
     "min": 0.02,
     "max": 0.4
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/README.md",
-  "commit": "b7a1ec6db83c3ea7cc7f56267b0ba106528cc508",
-  "signature": "ed25519:oNLaHPdWZu/fUPh0vZywdjlDCGrl4ysjDNfISg+KKajn6W61RMZnNOohDxvl/w5Hv2Am0ieVL3gXt1G/Jk94Ag=="
+  "commit": "a0942919ff8b53b91cee1e7ef6cb16ded0b1f37b",
+  "signature": "ed25519:k2E0INOpLqhJ+pnrHnj94aV24AtlGE8YHjrdXi/bP2pevrFi2WJGm1520/bTavSLUHngSREWo8wCsFmOUAi6AQ=="
 }

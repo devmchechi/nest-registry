@@ -59,7 +59,8 @@ PACK_REPOS = {
     "personal-pack": "nest-personal-pack",
 }
 
-KNOWN_TOOLS = {"shell", "read_file", "write_file", "list_dir"}
+# Runtime tools plus the host-side built-ins an agent can be granted
+KNOWN_TOOLS = {"shell", "read_file", "write_file", "list_dir", "delegate_to_agent", "find_people", "my_requests"}
 ID_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$")
 WORKFLOW_ID_RE = re.compile(r"^[A-Za-z0-9_.-]+$")
 STEP_KEYS = {"id", "agent", "input", "requires_approval", "critical", "on_failure"}
@@ -235,7 +236,10 @@ def load_agent(pack: str, folder: Path) -> dict | None:
     for banned in ("model", "aws", "pilots"):
         if banned in fm:
             err(f"{where}: '{banned}' must not be set")
-    unknown = set(fm) - {"name", "description", "allowed-tools", "requires_approval", "network", "connectors", "tags"}
+    unknown = set(fm) - {
+        "name", "description", "allowed-tools", "requires_approval", "network", "connectors", "tags",
+        "serves", "accepts_delegation",
+    }
     if unknown:
         err(f"{where}: unexpected frontmatter keys {sorted(unknown)}")
 
@@ -249,6 +253,8 @@ def load_agent(pack: str, folder: Path) -> dict | None:
         err(f"{where}: write_file must require approval")
     if "shell" in tools and "shell" not in approvals:
         err(f"{where}: shell should require approval")
+    if "delegate_to_agent" in tools and "delegate_to_agent" not in approvals:
+        err(f"{where}: delegate_to_agent must require approval")
 
     hosts = []
     network = fm.get("network") or {}
