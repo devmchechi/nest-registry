@@ -1,0 +1,39 @@
+{
+  "id": "chief-of-staff",
+  "name": "Chief of Staff",
+  "description": "Your representative on your team. Finds who is responsible for what, asks people and assigns them work with your approval, tracks it, and answers questions about your work for others.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nandin-dev-pack",
+  "latest_version": "0.4.0",
+  "ref": "v0.4.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/chief-of-staff",
+  "tags": [
+    "official",
+    "personal",
+    "productivity",
+    "team"
+  ],
+  "capabilities": {
+    "tools": [
+      "read_file",
+      "list_dir",
+      "find_people",
+      "my_requests",
+      "delegate_to_agent"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": [
+      "delegate_to_agent"
+    ]
+  },
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/chief-of-staff/README.md",
+  "commit": "65064d4cdd6b5bb3d03ffab7a7767cb188ef486a",
+  "signature": "ed25519:eX6IyOvxfjQ8fZ9ryD1fhzC8Tn+KlyjH2RF7fdzF68pQhjt+J6wiI3uFj/90wDH/7CvnhlNEXDn2Lpko7u3EDw=="
+}

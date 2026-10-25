@@ -1,0 +1,34 @@
+{
+  "id": "aws-ops-analyst",
+  "name": "AWS Ops Analyst",
+  "description": "Investigates failed AWS Batch jobs and CloudWatch alarms from their logs, finds the cause with evidence, and proposes a fix. Restarting a job waits for your approval.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nandin-dev-pack",
+  "latest_version": "0.4.0",
+  "ref": "v0.4.0",
+  "min_nest_version": "0.1.0",
+  "path": "agents/aws-ops-analyst",
+  "tags": [
+    "official",
+    "ops",
+    "aws",
+    "incidents"
+  ],
+  "capabilities": {
+    "tools": [
+      "read_file",
+      "list_dir"
+    ],
+    "network": [],
+    "pilots": [],
+    "requires_approval": []
+  },
+  "estimated_cost_usd": {
+    "min": 0.02,
+    "max": 0.4
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/aws-ops-analyst/README.md",
+  "commit": "65064d4cdd6b5bb3d03ffab7a7767cb188ef486a",
+  "signature": "ed25519:+Pa0kcwTnPcXdjCSAQNMNlCz4qFBBpdc6Vr9Q57Kcvu/n4pd/GyBeqGwM/4gdzICCqSJHy78Ea7wsTxXeURUBQ=="
+}

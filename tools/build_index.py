@@ -70,7 +70,8 @@ STEP_OUTPUT_RE = re.compile(r"^([A-Za-z0-9_.-]+?)\.output$")
 
 SEED = {
     "agents": {
-        "my-work": (["official", "personal", "productivity", "notes"], 0.01, 0.10),
+        "chief-of-staff": (["official", "personal", "productivity", "team"], 0.01, 0.10),
+        "aws-ops-analyst": (["official", "ops", "aws", "incidents"], 0.02, 0.40),
         "pr-reviewer": (["official", "engineering", "code-review", "github"], 0.02, 0.40),
         "invoice-reconciler": (["finance", "invoices", "reconciliation", "accounting"], 0.01, 0.15),
         "cashflow-forecaster": (["finance", "cashflow", "runway", "treasury"], 0.02, 0.20),
@@ -116,7 +117,7 @@ SEED = {
         "meeting-notes": (["personal", "meetings", "notes", "productivity", "offline"], 0.01, 0.12),
     },
     "packs": {
-        "dev-pack": (["official", "engineering", "productivity", "github"], 0.02, 0.40),
+        "dev-pack": (["official", "engineering", "productivity", "github", "aws"], 0.02, 0.40),
         "finance-pack": (["finance", "accounting", "invoices", "cashflow", "smb", "corporate"], 0.05, 0.50),
         "trading-pack": (["trading", "markets", "stocks", "quant", "sentiment", "portfolio"], 0.05, 0.50),
         "healthcare-pack": (["healthcare", "clinical", "medical", "billing", "hipaa"], 0.05, 0.50),

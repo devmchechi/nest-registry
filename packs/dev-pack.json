@@ -1,11 +1,11 @@
 {
   "id": "dev-pack",
   "name": "Nandin Dev Pack",
-  "description": "Official agents from Nandin. My Work is your representative on your team; PR Reviewer reviews pull requests against your rules. AWS Ops Analyst follows.",
+  "description": "Official agents from Nandin. Chief of Staff is your representative on your team; PR Reviewer reviews pull requests; AWS Ops Analyst investigates failed jobs and alarms.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.3.0",
-  "ref": "v0.3.0",
+  "latest_version": "0.4.0",
+  "ref": "v0.4.0",
   "min_nest_version": "0.1.0",
   "tags": [
     "official",
@@ -15,14 +15,19 @@
   ],
   "agents": [
     {
-      "id": "my-work",
-      "name": "My Work",
+      "id": "chief-of-staff",
+      "name": "Chief of Staff",
       "description": "Your representative on your team. Finds who is responsible for what, asks people and assigns them work with your approval, tracks it, and answers questions about your work for others."
     },
     {
       "id": "pr-reviewer",
       "name": "PR Reviewer",
       "description": "Reviews a GitHub pull request, private repositories included, against your own rules and the repo's guidelines, then posts the review on the PR once you approve the exact comments."
+    },
+    {
+      "id": "aws-ops-analyst",
+      "name": "AWS Ops Analyst",
+      "description": "Investigates failed AWS Batch jobs and CloudWatch alarms from their logs, finds the cause with evidence, and proposes a fix. Restarting a job waits for your approval."
     }
   ],
   "workflows": [],
@@ -40,13 +45,13 @@
       "delegate_to_agent"
     ]
   },
-  "install_size_kb": 25,
+  "install_size_kb": 32,
   "estimated_cost_usd": {
     "min": 0.02,
     "max": 0.4
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/README.md",
-  "commit": "1bf14b38f4a65d35d3bfd7eabecf45a823bbe177",
-  "signature": "ed25519:p2rt1C4mZCswS+eKn+O+LiP0AC7DrlLohaUvM0Lv+UcavFfHHQZeBUVdKjVkYIleld7tvARFhVC1zcStk7YBBg=="
+  "commit": "65064d4cdd6b5bb3d03ffab7a7767cb188ef486a",
+  "signature": "ed25519:2Hq08Y5RbYiL+p6ZSjBQUtJPN3msTb1Sc0bp7u9zlJOcpwqlOAWZ4scVZCmtklZuwRFgNLsVYNoSWZYtFTBMAA=="
 }
