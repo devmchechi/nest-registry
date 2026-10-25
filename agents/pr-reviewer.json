@@ -4,8 +4,8 @@
   "description": "Reviews a GitHub pull request, private repositories included, against your own rules and the repo's guidelines, then posts the review on the PR once you approve the exact comments.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.4.2",
-  "ref": "v0.4.2",
+  "latest_version": "0.4.3",
+  "ref": "v0.4.3",
   "min_nest_version": "0.1.0",
   "path": "agents/pr-reviewer",
   "tags": [
@@ -29,6 +29,6 @@
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/pr-reviewer/README.md",
-  "commit": "5078b18eb26eeac1d7f9f664cb72e471dedcd8af",
-  "signature": "ed25519:yo9vhKuDdM4vIhhBK/wyIlzOlcBkQ3lzZBm86Ih11nC5SixQbwIPddhfRGSFJsXjEcA8xv29RmcD+acCJoAsBA=="
+  "commit": "39b1ecbce2171d518c8b6e8d2170839312e54490",
+  "signature": "ed25519:Gxq/ZXEok5Ibm+++aD6aE7dAMa4AtaAjw/UOaMjRHe5ymj/N6SW57YWG273ldoznfH8d71gRadGMa2/4UhK1DA=="
 }
