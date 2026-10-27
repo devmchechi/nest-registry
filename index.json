@@ -7,12 +7,13 @@
       "description": "Your representative on your team. Finds who is responsible for what, asks people and assigns them work with your approval, tracks it, and answers questions about your work for others.",
       "publisher": "devmchechi",
       "repo": "github.com/devmchechi/nandin-dev-pack",
-      "latest_version": "0.4.3",
-      "ref": "v0.4.3",
+      "latest_version": "0.4.4",
+      "ref": "v0.4.4",
       "min_nest_version": "0.1.0",
       "path": "agents/chief-of-staff",
       "tags": [
         "official",
+        "free",
         "personal",
         "productivity",
         "team"
@@ -37,8 +38,8 @@
         "min": 0.01,
         "max": 0.1
       },
-      "commit": "39b1ecbce2171d518c8b6e8d2170839312e54490",
-      "signature": "ed25519:832lVzREegZUmn1P6XQ9imrUHW4lHg4b2k+MB2KIJ3uVS2mKbJtbubxhGyGsUf87Sbdk+Jrs4RAc0WNd+iKABA=="
+      "commit": "788bf8045e617c7c6120488e1295316106eaf711",
+      "signature": "ed25519:5mnrsoruEiEZnygtOOGoKcoVAVry8EzJ4PSSsRtogEYCvxR3vT1VXvASfzjlliKvMsgs7Lj+pW7nRRAEOQy3AA=="
     },
     {
       "id": "pr-reviewer",
@@ -46,12 +47,13 @@
       "description": "Reviews a GitHub pull request, private repositories included, against your own rules and the repo's guidelines, then posts the review on the PR once you approve the exact comments.",
       "publisher": "devmchechi",
       "repo": "github.com/devmchechi/nandin-dev-pack",
-      "latest_version": "0.4.3",
-      "ref": "v0.4.3",
+      "latest_version": "0.4.4",
+      "ref": "v0.4.4",
       "min_nest_version": "0.1.0",
       "path": "agents/pr-reviewer",
       "tags": [
         "official",
+        "free",
         "engineering",
         "code-review",
         "github"
@@ -69,21 +71,22 @@
         "min": 0.02,
         "max": 0.4
       },
-      "commit": "39b1ecbce2171d518c8b6e8d2170839312e54490",
-      "signature": "ed25519:Gxq/ZXEok5Ibm+++aD6aE7dAMa4AtaAjw/UOaMjRHe5ymj/N6SW57YWG273ldoznfH8d71gRadGMa2/4UhK1DA=="
+      "commit": "788bf8045e617c7c6120488e1295316106eaf711",
+      "signature": "ed25519:L6+1ew33IaaRHYbEFpXrnxDTJMOpLQjQZrOyJKB/ptntVzvO+ZCjpGdXFbILl9ogTGmmDbn3RIqkcbHvjBM3Ag=="
     },
     {
       "id": "aws-ops-analyst",
       "name": "AWS Ops Analyst",
-      "description": "Investigates failed AWS Batch jobs and CloudWatch alarms from their logs, finds the cause with evidence, and proposes a fix. Restarting a job waits for your approval.",
+      "description": "Investigates failed Batch jobs, CloudWatch alarms, ECS services and EC2 instances from logs and metrics, finds the cause with evidence, and proposes a fix that waits for your approval.",
       "publisher": "devmchechi",
       "repo": "github.com/devmchechi/nandin-dev-pack",
-      "latest_version": "0.4.3",
-      "ref": "v0.4.3",
+      "latest_version": "0.4.4",
+      "ref": "v0.4.4",
       "min_nest_version": "0.1.0",
       "path": "agents/aws-ops-analyst",
       "tags": [
         "official",
+        "free",
         "ops",
         "aws",
         "incidents"
@@ -101,22 +104,23 @@
         "min": 0.02,
         "max": 0.4
       },
-      "commit": "39b1ecbce2171d518c8b6e8d2170839312e54490",
-      "signature": "ed25519:Xl3WTvdtMMEUjaeXxidpcRB6UOz7BOah6Lrm492O5DzXXTODUWAFyuLcllWJzZoeEAZAdYzTY5jsEjB89/u/Cw=="
+      "commit": "788bf8045e617c7c6120488e1295316106eaf711",
+      "signature": "ed25519:GZBT3W3fJ9dPxjKGc3lAaYbzj3sMMtSTZKK5BnwHuZEWwqum2P8mRTJYv9+632B2ksBuVmlbjo7tLoZqTXAeBw=="
     }
   ],
   "packs": [
     {
       "id": "dev-pack",
       "name": "Nandin Dev Pack",
-      "description": "Official agents from Nandin. Chief of Staff is your representative on your team; PR Reviewer reviews pull requests; AWS Ops Analyst investigates failed jobs and alarms.",
+      "description": "Official agents from Nandin. Chief of Staff is your representative on your team; PR Reviewer reviews pull requests; AWS Ops Analyst investigates failed jobs, alarms, services and instances.",
       "publisher": "devmchechi",
       "repo": "github.com/devmchechi/nandin-dev-pack",
-      "latest_version": "0.4.3",
-      "ref": "v0.4.3",
+      "latest_version": "0.4.4",
+      "ref": "v0.4.4",
       "min_nest_version": "0.1.0",
       "tags": [
         "official",
+        "free",
         "engineering",
         "productivity",
         "github"
@@ -135,7 +139,7 @@
         {
           "id": "aws-ops-analyst",
           "name": "AWS Ops Analyst",
-          "description": "Investigates failed AWS Batch jobs and CloudWatch alarms from their logs, finds the cause with evidence, and proposes a fix. Restarting a job waits for your approval."
+          "description": "Investigates failed Batch jobs, CloudWatch alarms, ECS services and EC2 instances from logs and metrics, finds the cause with evidence, and proposes a fix that waits for your approval."
         }
       ],
       "workflows": [],
@@ -155,15 +159,15 @@
           "write_file"
         ]
       },
-      "install_size_kb": 34,
+      "install_size_kb": 36,
       "estimated_cost_usd": {
         "min": 0.02,
         "max": 0.4
       },
       "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
       "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/README.md",
-      "commit": "39b1ecbce2171d518c8b6e8d2170839312e54490",
-      "signature": "ed25519:5udGkpfqecTw9Mn/ThbrBaoVUnfQ9n8fboOFLWDJ/7QeYB1hIrz0SjfGBzoE6UJ6eAIVBDal4HBcyY3Ah3iwAw=="
+      "commit": "788bf8045e617c7c6120488e1295316106eaf711",
+      "signature": "ed25519:zgCnrMjxAp8d+1iRGi5dITawCdDjq6A8Efa5c8lzCUoOTSviDgGiNx/OVbyL7kQLszoGAwTBPdIkmP3hCJ2CDA=="
     }
   ]
 }
