@@ -282,6 +282,16 @@ def load_agent(pack: str, folder: Path) -> dict | None:
             err(f"{where}: host {rule['host']} has a methods limit (HTTPS tunnels need none)")
         hosts.append(str(rule["host"]).lower())
 
+    # Connectors from Library › Tools, by ID (`[s3_backup]` or `[{id: filesystem, ...}]`)
+    connectors = []
+    for item in fm.get("connectors") or []:
+        cid = item.get("id") if isinstance(item, dict) else item
+        if not isinstance(cid, str) or not cid.strip():
+            err(f"{where}: connectors entries need an id")
+            continue
+        if cid not in connectors:
+            connectors.append(cid)
+
     words = len(re.findall(r"\S+", body))
     if not 300 <= words <= 900:
         err(f"{where}: system prompt is {words} words (want 300-900)")
@@ -293,6 +303,7 @@ def load_agent(pack: str, folder: Path) -> dict | None:
         "tools": list(tools),
         "network": hosts,
         "requires_approval": list(approvals),
+        "connectors": connectors,
         "words": words,
     }
 
@@ -445,6 +456,7 @@ def caps(agents: list[dict]) -> dict:
         "network": union("network"),
         "pilots": [],
         "requires_approval": union("requires_approval"),
+        "connectors": union("connectors"),
     }
 
 

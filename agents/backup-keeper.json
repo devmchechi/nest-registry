@@ -19,7 +19,10 @@
     "tools": [],
     "network": [],
     "pilots": [],
-    "requires_approval": []
+    "requires_approval": [],
+    "connectors": [
+      "s3_backup"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.01,

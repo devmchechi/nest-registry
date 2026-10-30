@@ -22,7 +22,10 @@
     ],
     "network": [],
     "pilots": [],
-    "requires_approval": []
+    "requires_approval": [],
+    "connectors": [
+      "github"
+    ]
   },
   "estimated_cost_usd": {
     "min": 0.02,

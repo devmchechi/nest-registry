@@ -34,7 +34,11 @@
     ],
     "network": [],
     "pilots": [],
-    "requires_approval": []
+    "requires_approval": [],
+    "connectors": [
+      "github",
+      "aws"
+    ]
   },
   "install_size_kb": 24,
   "estimated_cost_usd": {
