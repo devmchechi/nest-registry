@@ -63,8 +63,20 @@ PACK_REPOS = {
 KNOWN_TOOLS = {"shell", "read_file", "write_file", "list_dir", "delegate_to_agent", "find_people", "my_requests"}
 ID_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$")
 WORKFLOW_ID_RE = re.compile(r"^[A-Za-z0-9_.-]+$")
-STEP_KEYS = {"id", "agent", "input", "requires_approval", "critical", "on_failure"}
-WORKFLOW_KEYS = {"id", "name", "steps"}
+# The keys the app accepts (src-tauri/src/services/domain/workflow.rs, Step and WorkflowFile)
+STEP_KEYS = {
+    "id",
+    "step_type",
+    "agent",
+    "input",
+    "instructions",
+    "deadline_hours",
+    "requires_approval",
+    "critical",
+    "on_failure",
+}
+WORKFLOW_KEYS = {"id", "name", "description", "steps", "provides"}
+STEP_TYPES = ("agent", "manual")
 TEMPLATE_RE = re.compile(r"\{\{\s*([^}]*?)\s*\}\}")
 STEP_OUTPUT_RE = re.compile(r"^([A-Za-z0-9_.-]+?)\.output$")
 
@@ -314,12 +326,28 @@ def load_workflow(pack: str, path: Path, agent_ids: set[str]) -> str | None:
         sid = step.get("id")
         if not isinstance(sid, str) or not WORKFLOW_ID_RE.match(sid) or sid in seen:
             err(f"{sw}: missing, invalid or duplicate step id '{sid}'")
-        if step.get("agent") not in agent_ids:
-            err(f"{sw}: agent '{step.get('agent')}' is not in this pack")
-        text = step.get("input")
-        if not isinstance(text, str) or not text.strip():
-            err(f"{sw}: input is required")
-            text = ""
+        step_type = step.get("step_type", "agent")
+        if step_type not in STEP_TYPES:
+            err(f"{sw}: step_type must be agent or manual")
+        if step_type == "manual":
+            # A person follows the instructions; there's no agent or input
+            text = step.get("instructions")
+            if not isinstance(text, str) or not text.strip():
+                err(f"{sw}: a manual step needs instructions")
+                text = ""
+            hours = step.get("deadline_hours")
+            if hours is not None and (not isinstance(hours, int) or isinstance(hours, bool) or hours < 1):
+                err(f"{sw}: deadline_hours must be a whole number of hours")
+        else:
+            if step.get("agent") not in agent_ids:
+                err(f"{sw}: agent '{step.get('agent')}' is not in this pack")
+            text = step.get("input")
+            if not isinstance(text, str) or not text.strip():
+                err(f"{sw}: input is required")
+                text = ""
+            for key in ("instructions", "deadline_hours"):
+                if key in step:
+                    err(f"{sw}: {key} is only for manual steps")
         for ref in TEMPLATE_RE.findall(text):
             m = STEP_OUTPUT_RE.match(ref)
             if not m:
