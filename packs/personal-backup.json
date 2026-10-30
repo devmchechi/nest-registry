@@ -1,0 +1,42 @@
+{
+  "id": "personal-backup",
+  "name": "Nandin Personal Backup",
+  "description": "Backs up the folders you choose to your own Amazon S3 bucket on Glacier Deep Archive, as they change and every night. Backup Keeper sets up the AWS side with you.",
+  "publisher": "devmchechi",
+  "repo": "github.com/devmchechi/nandin-personal-backup",
+  "latest_version": "0.1.0",
+  "ref": "v0.1.0",
+  "min_nest_version": "0.1.0",
+  "tags": [
+    "official",
+    "free",
+    "personal",
+    "backup",
+    "aws"
+  ],
+  "agents": [
+    {
+      "id": "backup-keeper",
+      "name": "Backup Keeper",
+      "description": "Backs up your chosen folders to your own S3 bucket on Glacier Deep Archive (about $1 per TB a month), as they change and nightly. Sets up the account, bucket and upload-only user with your approval."
+    }
+  ],
+  "workflows": [
+    "set-up-s3-backup"
+  ],
+  "capabilities": {
+    "tools": [],
+    "network": [],
+    "pilots": [],
+    "requires_approval": []
+  },
+  "install_size_kb": 12,
+  "estimated_cost_usd": {
+    "min": 0.01,
+    "max": 0.1
+  },
+  "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-personal-backup/HEAD/icon.svg",
+  "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-personal-backup/HEAD/README.md",
+  "commit": "afd034211ff05b571f9a11541469cac91dbdbe69",
+  "signature": "ed25519:rdqyfBkFubld0KnOrqL0j5Hs0P9oGq6FglvtZf3yY75H2SfyyRMSYZa3FCFThhfiiYnCHqZAC9XSiEgPMakcCA=="
+}

@@ -44,6 +44,7 @@ RAW = "https://raw.githubusercontent.com/{owner}/{repo}/HEAD/{path}"
 # pack folder -> GitHub repo name
 PACK_REPOS = {
     "dev-pack": "nandin-dev-pack",
+    "personal-backup": "nandin-personal-backup",
     "finance-pack": "nest-finance-pack",
     "trading-pack": "nest-trading-pack",
     "healthcare-pack": "nest-healthcare-pack",
@@ -85,6 +86,7 @@ SEED = {
         "chief-of-staff": (["official", "personal", "productivity", "team"], 0.01, 0.10),
         "aws-ops-analyst": (["official", "ops", "aws", "incidents"], 0.02, 0.40),
         "pr-reviewer": (["official", "engineering", "code-review", "github"], 0.02, 0.40),
+        "backup-keeper": (["official", "free", "personal", "backup", "aws"], 0.01, 0.05),
         "invoice-reconciler": (["finance", "invoices", "reconciliation", "accounting"], 0.01, 0.15),
         "cashflow-forecaster": (["finance", "cashflow", "runway", "treasury"], 0.02, 0.20),
         "financial-auditor": (["finance", "audit", "statements", "sec", "ratios"], 0.02, 0.25),
@@ -130,6 +132,7 @@ SEED = {
     },
     "packs": {
         "dev-pack": (["official", "engineering", "productivity", "github", "aws"], 0.02, 0.40),
+        "personal-backup": (["official", "free", "personal", "backup", "aws"], 0.01, 0.10),
         "finance-pack": (["finance", "accounting", "invoices", "cashflow", "smb", "corporate"], 0.05, 0.50),
         "trading-pack": (["trading", "markets", "stocks", "quant", "sentiment", "portfolio"], 0.05, 0.50),
         "healthcare-pack": (["healthcare", "clinical", "medical", "billing", "hipaa"], 0.05, 0.50),
