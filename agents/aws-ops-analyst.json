@@ -4,8 +4,8 @@
   "description": "Investigates failed Batch jobs, CloudWatch alarms, ECS services and EC2 instances from logs and metrics, finds the cause with evidence, and proposes a fix that waits for your approval.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.4.4",
-  "ref": "v0.4.4",
+  "latest_version": "0.4.5",
+  "ref": "v0.4.5",
   "min_nest_version": "0.1.0",
   "path": "agents/aws-ops-analyst",
   "tags": [
@@ -30,6 +30,6 @@
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/agents/aws-ops-analyst/README.md",
-  "commit": "788bf8045e617c7c6120488e1295316106eaf711",
-  "signature": "ed25519:GZBT3W3fJ9dPxjKGc3lAaYbzj3sMMtSTZKK5BnwHuZEWwqum2P8mRTJYv9+632B2ksBuVmlbjo7tLoZqTXAeBw=="
+  "commit": "eb5a9d4083964c61c80fd30e2d0fd9bbb48e6dea",
+  "signature": "ed25519:LF4k1sPSFtVF3n5pNubhA/xWdUbHFkP49OnTOJB8oYPZvRLgKjStEFyGowt69cvMDibMusGguS4ZeEeO9xF3DQ=="
 }

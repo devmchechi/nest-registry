@@ -4,8 +4,8 @@
   "description": "Official agents from Nandin. Chief of Staff is your representative on your team; PR Reviewer reviews pull requests; AWS Ops Analyst investigates failed jobs, alarms, services and instances.",
   "publisher": "devmchechi",
   "repo": "github.com/devmchechi/nandin-dev-pack",
-  "latest_version": "0.4.4",
-  "ref": "v0.4.4",
+  "latest_version": "0.4.5",
+  "ref": "v0.4.5",
   "min_nest_version": "0.1.0",
   "tags": [
     "official",
@@ -55,6 +55,6 @@
   },
   "icon_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/icon.svg",
   "readme_url": "https://raw.githubusercontent.com/devmchechi/nandin-dev-pack/HEAD/README.md",
-  "commit": "788bf8045e617c7c6120488e1295316106eaf711",
-  "signature": "ed25519:zgCnrMjxAp8d+1iRGi5dITawCdDjq6A8Efa5c8lzCUoOTSviDgGiNx/OVbyL7kQLszoGAwTBPdIkmP3hCJ2CDA=="
+  "commit": "eb5a9d4083964c61c80fd30e2d0fd9bbb48e6dea",
+  "signature": "ed25519:bmOECqRtUy8Bhn+ydyENqWo801VHbvLC8HpLfpNGgoUvkyfHrfLgz+CNcPNUQtjH2CuxA0wHGXvv2CcsHGxGBQ=="
 }
